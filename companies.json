@@ -1,12 +1,12 @@
 {
-  "_comment": "ATS types: 'greenhouse' (boards-api.greenhouse.io API), 'comeet_html' (scrape Comeet UIDs from careers HTML), 'linkedin' (aggregated LinkedIn search, name matched). LinkedIn is fragile - may rate-limit. Greenhouse and comeet_html are more reliable.",
+  "_comment": "ATS types: 'greenhouse' (API), 'linkedin' (aggregated search). LinkedIn requires the LinkedIn aggregator section in scraper.py to actually return data; if it returns 0, see LinkedIn diagnostics in the run logs.",
   "companies": [
-    { "name": "Melio",          "ats": "greenhouse",  "token": "melio" },
-    { "name": "Forter",         "ats": "greenhouse",  "token": "forter" },
-    { "name": "Riskified",      "ats": "greenhouse",  "token": "riskified" },
-    { "name": "HoneyBook",      "ats": "greenhouse",  "token": "honeybook" },
-    { "name": "Monday.com",     "ats": "comeet_html", "url": "https://monday.com/careers", "linkedin_name": "monday.com" },
+    { "name": "Melio",          "ats": "greenhouse", "token": "melio" },
+    { "name": "Forter",         "ats": "greenhouse", "token": "forter" },
+    { "name": "Riskified",      "ats": "greenhouse", "token": "riskified" },
+    { "name": "HoneyBook",      "ats": "greenhouse", "token": "honeybook" },
 
+    { "name": "Monday.com",     "ats": "linkedin", "linkedin_name": "monday.com" },
     { "name": "AppsFlyer",      "ats": "linkedin" },
     { "name": "Fiverr",         "ats": "linkedin" },
     { "name": "Lightricks",     "ats": "linkedin" },
@@ -28,7 +28,6 @@
     { "name": "Nvidia",         "ats": "linkedin" }
   ],
   "filters": {
-    "_comment": "Title must contain all of (titleMustMatch) AND at least one of (seniorityIndicators) AND none of (excludeTitle). Location must contain at least one of (locationMustMatch) AND none of (excludeLocation).",
     "titleMustMatch": ["product"],
     "seniorityIndicators": [
       "senior", "sr.", "sr ", "staff", "principal", "lead",

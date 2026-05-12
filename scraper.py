@@ -1,18 +1,14 @@
 """
-Job Tracker Scraper
-Fetches product roles from:
-  - Greenhouse API (Melio, Forter, Riskified, HoneyBook)
-  - Comeet HTML (Monday.com)
-  - LinkedIn jobs-guest search (everyone else - aggregated)
-Filters to Senior PM+ in Israel + Remote. Diffs against existing state.
+Job Tracker Scraper.
+Sources: Greenhouse API + LinkedIn aggregated public search.
+Filters: Senior PM+ in Israel/Remote.
 """
 
 import json
 import re
 import time
-from datetime import datetime, timezone, timedelta
+from datetime import datetime, timezone
 from pathlib import Path
-from urllib.parse import urljoin
 
 import requests
 from bs4 import BeautifulSoup
@@ -22,8 +18,6 @@ COMPANIES_FILE = ROOT / "companies.json"
 DATA_FILE = ROOT / "data" / "jobs.json"
 USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36"
 HTTP_TIMEOUT = 30
-
-COMEET_UID_RE = re.compile(r"([A-F0-9]{2}\.[A-F0-9]{3})", re.IGNORECASE)
 
 
 # ============================================================
@@ -58,13 +52,8 @@ def matches_location(location: str, filters: dict) -> bool:
 
 def parse_description(html_or_text: str) -> dict:
     text = html_to_text(html_or_text)
-    sections = {
-        "companyDetails": "",
-        "productDetails": "",
-        "jobDescription": "",
-        "requirements": "",
-        "other": ""
-    }
+    sections = {"companyDetails": "", "productDetails": "", "jobDescription": "",
+                "requirements": "", "other": ""}
     patterns = [
         (r"(?im)^(about (the |our )?(company|us|team)|who we are|company overview)", "companyDetails"),
         (r"(?im)^(about (the )?(product|role)|product overview|the role)", "productDetails"),
@@ -84,8 +73,8 @@ def parse_description(html_or_text: str) -> dict:
     for i, (start, key) in enumerate(boundaries):
         end = boundaries[i + 1][0] if i + 1 < len(boundaries) else len(text)
         chunk = text[start:end].strip()
-        chunk_lines = chunk.split("\n", 1)
-        chunk = chunk_lines[1].strip() if len(chunk_lines) > 1 else chunk
+        lines = chunk.split("\n", 1)
+        chunk = lines[1].strip() if len(lines) > 1 else chunk
         sections[key] = (sections[key] + "\n\n" + chunk).strip() if sections[key] else chunk
     return sections
 
@@ -97,9 +86,8 @@ def html_to_text(s: str) -> str:
     s = re.sub(r"</(p|div|li|h[1-6])>", "\n", s, flags=re.IGNORECASE)
     s = re.sub(r"<li[^>]*>", "• ", s, flags=re.IGNORECASE)
     s = re.sub(r"<[^>]+>", "", s)
-    s = (s.replace("&nbsp;", " ").replace("&amp;", "&")
-          .replace("&lt;", "<").replace("&gt;", ">")
-          .replace("&quot;", '"').replace("&#39;", "'")
+    s = (s.replace("&nbsp;", " ").replace("&amp;", "&").replace("&lt;", "<")
+          .replace("&gt;", ">").replace("&quot;", '"').replace("&#39;", "'")
           .replace("&rsquo;", "'").replace("&lsquo;", "'")
           .replace("&rdquo;", '"').replace("&ldquo;", '"'))
     s = re.sub(r"[ \t]+", " ", s)
@@ -108,7 +96,7 @@ def html_to_text(s: str) -> str:
 
 
 # ============================================================
-# ATS fetchers
+# Greenhouse
 # ============================================================
 
 def fetch_greenhouse(company: dict, _ctx=None) -> list:
@@ -130,206 +118,201 @@ def fetch_greenhouse(company: dict, _ctx=None) -> list:
     return jobs
 
 
-def fetch_comeet_html(company: dict, _ctx=None) -> list:
-    url = company["url"]
-    r = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=HTTP_TIMEOUT)
-    r.raise_for_status()
-    soup = BeautifulSoup(r.content, "html.parser")
-    jobs = []
-    seen_uids = set()
-    for link in soup.find_all("a", href=True):
-        m = COMEET_UID_RE.search(link["href"])
-        if not m:
-            continue
-        uid = m.group(1).upper()
-        if uid in seen_uids:
-            continue
-        seen_uids.add(uid)
-        raw_text = link.get_text(separator=" | ", strip=True)
-        parts = [p.strip() for p in raw_text.split("|") if p.strip()]
-        title, location = _split_title_location(parts, raw_text)
-        full_url = link["href"] if link["href"].startswith("http") else urljoin(url, link["href"])
-        jobs.append({
-            "external_id": uid,
-            "title": title,
-            "location": location,
-            "url": full_url,
-            "updated_at": None,
-            "raw_description": ""
-        })
-    return jobs
-
-
-def _split_title_location(parts: list, raw_text: str) -> tuple:
-    if len(parts) >= 2:
-        return parts[0], parts[-1]
-    if not raw_text:
-        return "Unknown", ""
-    loc_match = re.search(
-        r"^(.*?)\s+("
-        r"Remote(?:\s*[-,]\s*[A-Za-z]{2,}(?:\s+[A-Za-z]{2,})*)?"
-        r"|[A-Z][a-z][a-zA-Z\-]*(?:\s+[A-Z][a-z][a-zA-Z\-]*)?,\s*[A-Z]{2,3}"
-        r")\s*$",
-        raw_text
-    )
-    if loc_match:
-        return loc_match.group(1).strip(), loc_match.group(2).strip()
-    return raw_text.strip(), ""
-
-
 # ============================================================
-# LinkedIn aggregator - one search, many companies
+# LinkedIn aggregator
 # ============================================================
+
+LINKEDIN_HEADERS_VARIANTS = [
+    {
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.5",
+    },
+    {
+        "User-Agent": USER_AGENT,
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.9",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Sec-Ch-Ua": '"Chromium";v="120", "Not?A_Brand";v="8"',
+        "Sec-Ch-Ua-Mobile": "?0",
+        "Sec-Ch-Ua-Platform": '"macOS"',
+        "Sec-Fetch-Dest": "document",
+        "Sec-Fetch-Mode": "navigate",
+        "Sec-Fetch-Site": "none",
+        "Sec-Fetch-User": "?1",
+        "Upgrade-Insecure-Requests": "1",
+    },
+]
+
+LINKEDIN_ENDPOINTS = [
+    "https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search",
+    "https://www.linkedin.com/jobs/search",
+]
+
 
 def linkedin_search(target_names: list, errors: list) -> dict:
-    """
-    Search LinkedIn's public jobs-guest API for senior product roles in Israel.
-    Returns dict {company_name_lower: [job dicts]}.
-    target_names: list of (company_name, linkedin_match_name) tuples for matching.
-    """
+    """Aggregate LinkedIn search. Returns dict of jobs by matched company name."""
     keyword_variants = [
         "Senior Product Manager",
         "Director Product",
         "VP Product",
         "Head of Product",
         "Group Product Manager",
-        "Principal Product Manager",
+        "Lead Product Manager",
     ]
 
     jobs_by_company = {match_name.lower(): [] for _, match_name in target_names}
     seen_ids = set()
     total_fetched = 0
-    total_blocked = 0
+    diagnostics_shown = False
 
-    for kw in keyword_variants:
-        for start in (0, 25, 50):
-            url = "https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search"
-            params = {
-                "keywords": kw,
-                "location": "Israel",
-                "geoId": "101620260",  # Israel
-                "f_TPR": "r2592000",   # last 30 days
-                "start": str(start),
-            }
-            headers = {
-                "User-Agent": USER_AGENT,
-                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-                "Accept-Language": "en-US,en;q=0.9",
-                "Accept-Encoding": "gzip, deflate, br",
-                "Sec-Ch-Ua": '"Chromium";v="120", "Not?A_Brand";v="8"',
-                "Sec-Ch-Ua-Mobile": "?0",
-                "Sec-Ch-Ua-Platform": '"macOS"',
-                "Sec-Fetch-Dest": "empty",
-                "Sec-Fetch-Mode": "cors",
-                "Sec-Fetch-Site": "same-origin",
-                "Referer": "https://www.linkedin.com/jobs/search/",
-            }
-
-            try:
-                r = requests.get(url, params=params, headers=headers, timeout=HTTP_TIMEOUT)
-            except requests.RequestException as e:
-                errors.append(f"LinkedIn '{kw}' start={start}: {type(e).__name__}: {e}")
-                break
-
-            if r.status_code == 429 or r.status_code == 999:
-                total_blocked += 1
-                errors.append(f"LinkedIn '{kw}' start={start}: HTTP {r.status_code} (rate-limited/blocked)")
-                # back off, try next keyword
-                break
-            if r.status_code != 200:
-                errors.append(f"LinkedIn '{kw}' start={start}: HTTP {r.status_code}")
-                break
-
-            soup = BeautifulSoup(r.content, "html.parser")
-            cards = soup.find_all("div", class_=re.compile(r"base-card"))
-            if not cards:
-                cards = soup.find_all("li")
-            if not cards:
-                break
-
-            page_count = 0
-            for card in cards:
-                parsed = _parse_linkedin_card(card)
-                if not parsed:
-                    continue
-                jid = parsed["external_id"]
-                if jid in seen_ids:
-                    continue
-                seen_ids.add(jid)
-                page_count += 1
-                total_fetched += 1
-
-                found_company_lower = parsed["_company"].lower()
-                # Match against any target
-                for target_name, match_name in target_names:
-                    mn = match_name.lower()
-                    if mn in found_company_lower or found_company_lower in mn:
-                        jobs_by_company[mn].append({
-                            "external_id": parsed["external_id"],
-                            "title": parsed["title"],
-                            "location": parsed["location"],
-                            "url": parsed["url"],
-                            "updated_at": parsed["updated_at"],
-                            "raw_description": "",
-                        })
+    for endpoint in LINKEDIN_ENDPOINTS:
+        for headers in LINKEDIN_HEADERS_VARIANTS:
+            endpoint_total = 0
+            for kw in keyword_variants:
+                for start in (0, 25, 50):
+                    params = {
+                        "keywords": kw,
+                        "location": "Israel",
+                        "geoId": "101620260",
+                        "f_TPR": "r2592000",
+                        "start": str(start),
+                    }
+                    try:
+                        r = requests.get(endpoint, params=params, headers=headers, timeout=HTTP_TIMEOUT)
+                    except requests.RequestException as e:
+                        errors.append(f"LinkedIn {endpoint} '{kw}': {type(e).__name__}: {e}")
                         break
 
-            if page_count == 0:
-                break  # empty page = end of results for this keyword
+                    body_size = len(r.content)
+                    job_links = []
+                    if "html" in r.headers.get("Content-Type", ""):
+                        soup = BeautifulSoup(r.content, "html.parser")
+                        job_links = soup.find_all("a", href=re.compile(r"/jobs/view/\d+"))
 
-            time.sleep(2)  # politeness between pages
+                    # Diagnostics on first request only
+                    if not diagnostics_shown:
+                        print(f"  LinkedIn diag: endpoint={endpoint.split('/')[-1]} ua=...{headers['User-Agent'][-30:]}", flush=True)
+                        print(f"  LinkedIn diag: HTTP {r.status_code}, {body_size} bytes, content-type={r.headers.get('Content-Type', 'none')[:50]}", flush=True)
+                        print(f"  LinkedIn diag: found {len(job_links)} /jobs/view/ links", flush=True)
+                        if len(job_links) == 0:
+                            # Show a sample of what came back
+                            sample = r.text[:600].replace("\n", " ").replace("\r", "")
+                            print(f"  LinkedIn diag: response sample (first 600 chars):\n    {sample}", flush=True)
+                        diagnostics_shown = True
 
-        time.sleep(1)  # politeness between keywords
+                    if r.status_code in (429, 999):
+                        errors.append(f"LinkedIn {endpoint} '{kw}': HTTP {r.status_code} (blocked)")
+                        break
+                    if r.status_code != 200:
+                        errors.append(f"LinkedIn {endpoint} '{kw}': HTTP {r.status_code}")
+                        break
 
-    print(f"  LinkedIn: scanned {total_fetched} jobs across {len(keyword_variants)} keyword variants ({total_blocked} blocked)", flush=True)
+                    page_count = 0
+                    for link in job_links:
+                        parsed = _parse_linkedin_link(link)
+                        if not parsed:
+                            continue
+                        jid = parsed["external_id"]
+                        if jid in seen_ids:
+                            continue
+                        seen_ids.add(jid)
+                        page_count += 1
+                        endpoint_total += 1
+                        total_fetched += 1
+
+                        cname = parsed["_company"].lower()
+                        for target_name, match_name in target_names:
+                            mn = match_name.lower()
+                            if mn in cname or cname in mn:
+                                jobs_by_company[mn].append({
+                                    "external_id": parsed["external_id"],
+                                    "title": parsed["title"],
+                                    "location": parsed["location"],
+                                    "url": parsed["url"],
+                                    "updated_at": parsed["updated_at"],
+                                    "raw_description": "",
+                                })
+                                break
+
+                    if page_count == 0:
+                        break  # no more results for this keyword
+                    time.sleep(2)
+                time.sleep(1)
+
+            if endpoint_total > 0:
+                # This endpoint+headers combination worked, we're done
+                print(f"  LinkedIn: using endpoint={endpoint.split('/')[-1]}", flush=True)
+                print(f"  LinkedIn: scanned {total_fetched} unique jobs total", flush=True)
+                return jobs_by_company
+            else:
+                print(f"  LinkedIn: endpoint={endpoint.split('/')[-1]} ua-variant returned 0 jobs, trying next", flush=True)
+                # reset diagnostics so we see the next attempt
+                diagnostics_shown = False
+
+    # All endpoints/UAs failed
+    print(f"  LinkedIn: ALL endpoint+UA combinations returned 0 jobs", flush=True)
     return jobs_by_company
 
 
-def _parse_linkedin_card(card) -> dict:
-    """Extract job fields from a LinkedIn job card. Returns None if not a valid job card."""
-    # Job URL with ID
-    link = None
-    for a in card.find_all("a", href=True):
-        if "/jobs/view/" in a["href"]:
-            link = a
-            break
-    if not link:
-        return None
-    href = link["href"]
+def _parse_linkedin_link(link) -> dict:
+    """Walk up from a /jobs/view/ link to find a parent card, extract title/company/location."""
+    href = link.get("href", "")
     m = re.search(r"/jobs/view/(\d+)", href)
     if not m:
         return None
     job_id = m.group(1)
-    clean_url = href.split("?")[0]
 
-    # Title
+    # Walk up to find a card-like container
+    card = link
+    for _ in range(6):
+        if card.parent is None:
+            break
+        card = card.parent
+        if card.name in ("li", "article"):
+            break
+
+    # Title - try aria-label first, then class/h3 patterns
     title = ""
-    for sel in ["h3.base-search-card__title", "h3", "span.sr-only"]:
-        el = card.select_one(sel)
-        if el:
-            title = el.get_text(strip=True)
-            if title:
-                break
+    if link.get("aria-label"):
+        title = link["aria-label"].strip()
+    if not title:
+        for sel in [".base-search-card__title", "h3.base-search-card__title", "h3", "[class*=title]"]:
+            try:
+                el = card.select_one(sel)
+                if el:
+                    title = el.get_text(strip=True)
+                    if title:
+                        break
+            except Exception:
+                continue
 
     # Company
     company = ""
-    for sel in ["h4.base-search-card__subtitle a", "h4.base-search-card__subtitle", "h4 a", "h4"]:
-        el = card.select_one(sel)
-        if el:
-            company = el.get_text(strip=True)
-            if company:
-                break
+    for sel in [".base-search-card__subtitle a", ".base-search-card__subtitle", "h4 a", "h4",
+                "[class*=subtitle]", "[class*=company-name]"]:
+        try:
+            el = card.select_one(sel)
+            if el:
+                company = el.get_text(strip=True)
+                if company:
+                    break
+        except Exception:
+            continue
 
     # Location
     location = ""
-    for sel in ["span.job-search-card__location", ".job-search-card__location"]:
-        el = card.select_one(sel)
-        if el:
-            location = el.get_text(strip=True)
-            if location:
-                break
+    for sel in [".job-search-card__location", "[class*=location]"]:
+        try:
+            el = card.select_one(sel)
+            if el:
+                location = el.get_text(strip=True)
+                if location:
+                    break
+        except Exception:
+            continue
 
-    # Date posted
+    # Date
     updated_at = None
     time_el = card.find("time")
     if time_el and time_el.get("datetime"):
@@ -343,12 +326,11 @@ def _parse_linkedin_card(card) -> dict:
         "title": title,
         "_company": company,
         "location": location,
-        "url": clean_url,
+        "url": href.split("?")[0],
         "updated_at": updated_at,
     }
 
 
-# Placeholder fetcher (LinkedIn results come from the cache populated upfront)
 def fetch_linkedin(company: dict, ctx: dict) -> list:
     cache = ctx.get("linkedin_results", {})
     match_name = (company.get("linkedin_name") or company["name"]).lower()
@@ -357,13 +339,12 @@ def fetch_linkedin(company: dict, ctx: dict) -> list:
 
 FETCHERS = {
     "greenhouse": fetch_greenhouse,
-    "comeet_html": fetch_comeet_html,
     "linkedin": fetch_linkedin,
 }
 
 
 # ============================================================
-# State
+# State + main
 # ============================================================
 
 def load_state() -> dict:
@@ -384,10 +365,6 @@ def make_id(company: str, external_id: str) -> str:
     return f"{safe}-{external_id}"
 
 
-# ============================================================
-# Main
-# ============================================================
-
 def main():
     with open(COMPANIES_FILE, "r", encoding="utf-8") as f:
         cfg = json.load(f)
@@ -404,7 +381,6 @@ def main():
     fetch_errors = []
     ctx = {}
 
-    # Pre-fetch LinkedIn aggregator once for all linkedin-tagged companies
     linkedin_companies = [c for c in companies if c["ats"] == "linkedin"]
     if linkedin_companies:
         target_names = [(c["name"], c.get("linkedin_name") or c["name"]) for c in linkedin_companies]
@@ -415,7 +391,6 @@ def main():
             fetch_errors.append(f"LinkedIn aggregator: {type(e).__name__}: {e}")
             ctx["linkedin_results"] = {}
 
-    # Process each company
     for c in companies:
         name = c["name"]
         ats = c["ats"]
@@ -426,7 +401,7 @@ def main():
             fetch_errors.append(f"{name}: no fetcher for ats={ats}")
             continue
 
-        identifier = c.get("token") or c.get("url") or c.get("linkedin_name") or "?"
+        identifier = c.get("token") or c.get("linkedin_name") or "?"
         print(f"Processing {name} ({ats} / {identifier})...", flush=True)
         try:
             raw_jobs = fetcher(c, ctx)
@@ -435,11 +410,8 @@ def main():
             print(f"  ERROR: {e}", flush=True)
             continue
 
-        # Safety guard: 0 jobs returned = don't close existing (likely fetch issue, not real)
-        # Exception: linkedin entries with 0 results just mean LinkedIn had no jobs for that company today; 
-        #   we still close existing because the aggregator was successful
         if not raw_jobs and ats != "linkedin":
-            fetch_errors.append(f"{name}: 0 jobs returned (treating as fetch error)")
+            fetch_errors.append(f"{name}: 0 jobs returned (fetch likely failed, not closing)")
             print(f"  WARN: 0 jobs returned, skipping close detection", flush=True)
             continue
 
@@ -470,15 +442,10 @@ def main():
             else:
                 publish_date = (raw.get("updated_at") or now_iso)[:10]
                 existing[job_id] = {
-                    "id": job_id,
-                    "company": name,
-                    "title": raw["title"],
-                    "location": raw["location"],
-                    "url": raw["url"],
-                    "publishDate": publish_date,
-                    "discoveredDate": today,
-                    "closingDate": None,
-                    "status": "open",
+                    "id": job_id, "company": name, "title": raw["title"],
+                    "location": raw["location"], "url": raw["url"],
+                    "publishDate": publish_date, "discoveredDate": today,
+                    "closingDate": None, "status": "open",
                     "details": details,
                     "rawDescription": html_to_text(raw.get("raw_description", ""))[:5000]
                 }
@@ -490,7 +457,6 @@ def main():
         if ats != "linkedin":
             time.sleep(0.5)
 
-    # Detect closed jobs
     closed_count = 0
     for jid, j in existing.items():
         if j["status"] != "open":
