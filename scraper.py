@@ -186,17 +186,20 @@ def linkedin_search(target_names: list, errors: list) -> dict:
 
                     body_size = len(r.content)
                     job_links = []
+                    entity_cards = []
                     if "html" in r.headers.get("Content-Type", ""):
                         soup = BeautifulSoup(r.content, "html.parser")
-                        job_links = soup.find_all("a", href=re.compile(r"/jobs/view/\d+"))
+                        # LinkedIn changed URL format from /jobs/view/{id} to /jobs/view/{slug-ending-in-id}.
+                        # Find any /jobs/view/ link, AND data-entity-urn cards as a more reliable signal.
+                        job_links = soup.find_all("a", href=re.compile(r"/jobs/view/"))
+                        entity_cards = soup.find_all(attrs={"data-entity-urn": re.compile(r"jobPosting")})
 
                     # Diagnostics on first request only
                     if not diagnostics_shown:
                         print(f"  LinkedIn diag: endpoint={endpoint.split('/')[-1]} ua=...{headers['User-Agent'][-30:]}", flush=True)
                         print(f"  LinkedIn diag: HTTP {r.status_code}, {body_size} bytes, content-type={r.headers.get('Content-Type', 'none')[:50]}", flush=True)
-                        print(f"  LinkedIn diag: found {len(job_links)} /jobs/view/ links", flush=True)
-                        if len(job_links) == 0:
-                            # Show a sample of what came back
+                        print(f"  LinkedIn diag: found {len(entity_cards)} jobPosting cards, {len(job_links)} /jobs/view/ links", flush=True)
+                        if len(entity_cards) == 0 and len(job_links) == 0:
                             sample = r.text[:600].replace("\n", " ").replace("\r", "")
                             print(f"  LinkedIn diag: response sample (first 600 chars):\n    {sample}", flush=True)
                         diagnostics_shown = True
@@ -208,9 +211,12 @@ def linkedin_search(target_names: list, errors: list) -> dict:
                         errors.append(f"LinkedIn {endpoint} '{kw}': HTTP {r.status_code}")
                         break
 
+                    # Prefer entity_cards (have data-entity-urn = direct job ID), fall back to job_links
+                    items_to_parse = entity_cards if entity_cards else job_links
+
                     page_count = 0
-                    for link in job_links:
-                        parsed = _parse_linkedin_link(link)
+                    for item in items_to_parse:
+                        parsed = _parse_linkedin_item(item)
                         if not parsed:
                             continue
                         jid = parsed["external_id"]
@@ -255,44 +261,65 @@ def linkedin_search(target_names: list, errors: list) -> dict:
     return jobs_by_company
 
 
-def _parse_linkedin_link(link) -> dict:
-    """Walk up from a /jobs/view/ link to find a parent card, extract title/company/location."""
-    href = link.get("href", "")
-    m = re.search(r"/jobs/view/(\d+)", href)
-    if not m:
+def _parse_linkedin_item(item) -> dict:
+    """Parse a job from either a card (with data-entity-urn) or a link (with /jobs/view/ href)."""
+    job_id = None
+
+    # Path 1: it's a card with data-entity-urn
+    urn = item.get("data-entity-urn") if hasattr(item, "get") else None
+    if urn:
+        m = re.search(r"jobPosting:(\d+)", urn)
+        if m:
+            job_id = m.group(1)
+
+    # Find the /jobs/view/ link (either inside the card, or item itself)
+    link = None
+    if item.name == "a" and "/jobs/view/" in item.get("href", ""):
+        link = item
+    else:
+        try:
+            link = item.find("a", href=re.compile(r"/jobs/view/"))
+        except Exception:
+            link = None
+
+    # Path 2: extract ID from URL if not from urn
+    if not job_id and link:
+        href = link.get("href", "")
+        # LinkedIn slug ends with "-{digits}" usually
+        m = re.search(r"-(\d{8,})(?:[/?]|$)", href) or re.search(r"(\d{8,})", href)
+        if m:
+            job_id = m.group(1)
+
+    if not job_id:
         return None
-    job_id = m.group(1)
 
-    # Walk up to find a card-like container
-    card = link
-    for _ in range(6):
-        if card.parent is None:
-            break
-        card = card.parent
-        if card.name in ("li", "article"):
-            break
+    # URL
+    url = ""
+    if link:
+        url = link.get("href", "").split("?")[0]
 
-    # Title - try aria-label first, then class/h3 patterns
+    # Title - try clean h3 first, fall back to aria-label
     title = ""
-    if link.get("aria-label"):
-        title = link["aria-label"].strip()
-    if not title:
-        for sel in [".base-search-card__title", "h3.base-search-card__title", "h3", "[class*=title]"]:
-            try:
-                el = card.select_one(sel)
-                if el:
-                    title = el.get_text(strip=True)
-                    if title:
-                        break
-            except Exception:
-                continue
+    for sel in [".base-search-card__title", "h3.base-search-card__title", "h3"]:
+        try:
+            el = item.select_one(sel)
+            if el:
+                title = el.get_text(strip=True)
+                if title:
+                    break
+        except Exception:
+            continue
+    if not title and link and link.get("aria-label"):
+        # aria-label like "Senior PM at CompanyName" — strip the "at X" suffix
+        al = link["aria-label"].strip()
+        title = re.sub(r"\s+at\s+.+$", "", al, flags=re.IGNORECASE) or al
 
     # Company
     company = ""
     for sel in [".base-search-card__subtitle a", ".base-search-card__subtitle", "h4 a", "h4",
                 "[class*=subtitle]", "[class*=company-name]"]:
         try:
-            el = card.select_one(sel)
+            el = item.select_one(sel)
             if el:
                 company = el.get_text(strip=True)
                 if company:
@@ -304,7 +331,7 @@ def _parse_linkedin_link(link) -> dict:
     location = ""
     for sel in [".job-search-card__location", "[class*=location]"]:
         try:
-            el = card.select_one(sel)
+            el = item.select_one(sel)
             if el:
                 location = el.get_text(strip=True)
                 if location:
@@ -314,9 +341,12 @@ def _parse_linkedin_link(link) -> dict:
 
     # Date
     updated_at = None
-    time_el = card.find("time")
-    if time_el and time_el.get("datetime"):
-        updated_at = time_el["datetime"]
+    try:
+        time_el = item.find("time")
+        if time_el and time_el.get("datetime"):
+            updated_at = time_el["datetime"]
+    except Exception:
+        pass
 
     if not (title and company):
         return None
@@ -326,7 +356,7 @@ def _parse_linkedin_link(link) -> dict:
         "title": title,
         "_company": company,
         "location": location,
-        "url": href.split("?")[0],
+        "url": url,
         "updated_at": updated_at,
     }
 
