@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-12T09:18:50.263992+00:00",
+  "lastUpdated": "2026-05-12T21:09:47.794452+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -60,14 +60,8 @@
     }
   ],
   "fetchErrors": [
-    "Monday.com: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/mondaycom/jobs?content=true",
-    "Rapyd: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/rapyd/jobs?content=true",
-    "Lemonade: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/lemonade/jobs?content=true",
-    "Gong: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/gong/jobs?content=true",
-    "Snyk: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/snyk/jobs?content=true",
-    "Tipalti: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/tipalti/jobs?content=true",
     "AppsFlyer: 0 jobs returned (treating as fetch error, not closing existing)",
-    "Fiverr: 0 jobs returned (treating as fetch error, not closing existing)",
+    "Fiverr: HTTPError: 403 Client Error: Forbidden for url: https://www.fiverr.com/careers",
     "Lightricks: 0 jobs returned (treating as fetch error, not closing existing)",
     "Papaya Global: 0 jobs returned (treating as fetch error, not closing existing)",
     "JFrog: 0 jobs returned (treating as fetch error, not closing existing)",
