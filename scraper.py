@@ -1,23 +1,16 @@
 """
 Job Tracker Scraper
-Fetches product roles from each company's ATS, filters to Senior PM and above
-in Israel + Remote, and diffs against existing state to detect new/closed jobs.
-
-Usage:
-    python scraper.py
-
-Reads:
-    companies.json - target companies + filter config
-    data/jobs.json - current state (or empty if first run)
-
-Writes:
-    data/jobs.json - updated state
+Fetches product roles from:
+  - Greenhouse API (Melio, Forter, Riskified, HoneyBook)
+  - Comeet HTML (Monday.com)
+  - LinkedIn jobs-guest search (everyone else - aggregated)
+Filters to Senior PM+ in Israel + Remote. Diffs against existing state.
 """
 
 import json
 import re
 import time
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from urllib.parse import urljoin
 
@@ -60,7 +53,7 @@ def matches_location(location: str, filters: dict) -> bool:
 
 
 # ============================================================
-# Description parsing (heuristic)
+# Description parsing
 # ============================================================
 
 def parse_description(html_or_text: str) -> dict:
@@ -72,34 +65,28 @@ def parse_description(html_or_text: str) -> dict:
         "requirements": "",
         "other": ""
     }
-
     patterns = [
         (r"(?im)^(about (the |our )?(company|us|team)|who we are|company overview)", "companyDetails"),
         (r"(?im)^(about (the )?(product|role)|product overview|the role)", "productDetails"),
         (r"(?im)^(what you('?ll| will) do|responsibilities|your role|job description|the job|day to day)", "jobDescription"),
         (r"(?im)^(requirements|qualifications|what you('?ll| will) bring|what we('?re| are) looking for|skills|must have|nice to have|preferred)", "requirements"),
     ]
-
     boundaries = []
     for pat, key in patterns:
         for m in re.finditer(pat, text):
             boundaries.append((m.start(), key))
     boundaries.sort()
-
     if not boundaries:
         sections["jobDescription"] = text.strip()
         return sections
-
     if boundaries[0][0] > 0:
         sections["companyDetails"] = text[:boundaries[0][0]].strip()
-
     for i, (start, key) in enumerate(boundaries):
         end = boundaries[i + 1][0] if i + 1 < len(boundaries) else len(text)
         chunk = text[start:end].strip()
         chunk_lines = chunk.split("\n", 1)
         chunk = chunk_lines[1].strip() if len(chunk_lines) > 1 else chunk
         sections[key] = (sections[key] + "\n\n" + chunk).strip() if sections[key] else chunk
-
     return sections
 
 
@@ -124,7 +111,7 @@ def html_to_text(s: str) -> str:
 # ATS fetchers
 # ============================================================
 
-def fetch_greenhouse(company: dict) -> list:
+def fetch_greenhouse(company: dict, _ctx=None) -> list:
     token = company["token"]
     url = f"https://boards-api.greenhouse.io/v1/boards/{token}/jobs?content=true"
     r = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=HTTP_TIMEOUT)
@@ -143,65 +130,41 @@ def fetch_greenhouse(company: dict) -> list:
     return jobs
 
 
-def fetch_comeet_html(company: dict) -> list:
-    """
-    Generic HTML scraper for any careers page that uses Comeet job UIDs (XX.XXX format).
-    Finds all <a> tags whose href contains a Comeet UID, extracts title + location from text.
-    Tries best-effort split of concatenated text into title and location.
-    """
+def fetch_comeet_html(company: dict, _ctx=None) -> list:
     url = company["url"]
     r = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=HTTP_TIMEOUT)
     r.raise_for_status()
     soup = BeautifulSoup(r.content, "html.parser")
     jobs = []
     seen_uids = set()
-
     for link in soup.find_all("a", href=True):
-        href = link["href"]
-        m = COMEET_UID_RE.search(href)
+        m = COMEET_UID_RE.search(link["href"])
         if not m:
             continue
         uid = m.group(1).upper()
         if uid in seen_uids:
             continue
         seen_uids.add(uid)
-
-        # Get text from this anchor. Use separator to detect element boundaries.
         raw_text = link.get_text(separator=" | ", strip=True)
-        # Often comes out like "Senior Product Manager | Product | Tel Aviv, IL"
         parts = [p.strip() for p in raw_text.split("|") if p.strip()]
-
         title, location = _split_title_location(parts, raw_text)
-
-        full_url = href if href.startswith("http") else urljoin(url, href)
-
+        full_url = link["href"] if link["href"].startswith("http") else urljoin(url, link["href"])
         jobs.append({
             "external_id": uid,
             "title": title,
             "location": location,
             "url": full_url,
             "updated_at": None,
-            "raw_description": ""  # detail fetch is per-job and adds load; skip for now
+            "raw_description": ""
         })
-
     return jobs
 
 
 def _split_title_location(parts: list, raw_text: str) -> tuple:
-    """
-    Best-effort split of concatenated job title/team/location text.
-    Strategy:
-      1. If multiple parts (separator worked), title = first, location = last
-      2. Otherwise, regex for 'City, Country' or 'Remote' suffix at end of string
-    """
     if len(parts) >= 2:
         return parts[0], parts[-1]
-
     if not raw_text:
         return "Unknown", ""
-
-    # Trailing location pattern: "City, CC" (1-2 word cities) or "Remote, REGION" or "Remote"
-    # City words require at least one lowercase letter (so acronyms like "PM" aren't treated as cities)
     loc_match = re.search(
         r"^(.*?)\s+("
         r"Remote(?:\s*[-,]\s*[A-Za-z]{2,}(?:\s+[A-Za-z]{2,})*)?"
@@ -214,46 +177,193 @@ def _split_title_location(parts: list, raw_text: str) -> tuple:
     return raw_text.strip(), ""
 
 
-def fetch_amazon(company: dict) -> list:
-    """Amazon Jobs search filtered to Product Management in Israel + Remote."""
-    url = "https://www.amazon.jobs/en/search.json"
-    # Use list of tuples to allow repeated query params (country[]=ISR&country[]=Remote)
-    params = [
-        ("result_limit", "100"),
-        ("sort", "recent"),
-        ("job_function_id[]", "job_function_corporate_80"),  # Product Management
-        ("country[]", "ISR"),
-        ("country[]", "Remote"),
+# ============================================================
+# LinkedIn aggregator - one search, many companies
+# ============================================================
+
+def linkedin_search(target_names: list, errors: list) -> dict:
+    """
+    Search LinkedIn's public jobs-guest API for senior product roles in Israel.
+    Returns dict {company_name_lower: [job dicts]}.
+    target_names: list of (company_name, linkedin_match_name) tuples for matching.
+    """
+    keyword_variants = [
+        "Senior Product Manager",
+        "Director Product",
+        "VP Product",
+        "Head of Product",
+        "Group Product Manager",
+        "Principal Product Manager",
     ]
-    try:
-        r = requests.get(url, params=params, headers={"User-Agent": USER_AGENT}, timeout=HTTP_TIMEOUT)
-        if r.status_code != 200:
-            return []
-        data = r.json()
-        jobs = []
-        for j in data.get("jobs", []):
-            jobs.append({
-                "external_id": str(j.get("id_icims", j.get("id", ""))),
-                "title": j.get("title", ""),
-                "location": j.get("normalized_location", j.get("location", "")),
-                "url": "https://www.amazon.jobs" + j.get("job_path", ""),
-                "updated_at": j.get("posted_date"),
-                "raw_description": (j.get("description", "") + "\n\n" + j.get("basic_qualifications", ""))
-            })
-        return jobs
-    except Exception:
-        return []
+
+    jobs_by_company = {match_name.lower(): [] for _, match_name in target_names}
+    seen_ids = set()
+    total_fetched = 0
+    total_blocked = 0
+
+    for kw in keyword_variants:
+        for start in (0, 25, 50):
+            url = "https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search"
+            params = {
+                "keywords": kw,
+                "location": "Israel",
+                "geoId": "101620260",  # Israel
+                "f_TPR": "r2592000",   # last 30 days
+                "start": str(start),
+            }
+            headers = {
+                "User-Agent": USER_AGENT,
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                "Accept-Language": "en-US,en;q=0.9",
+                "Accept-Encoding": "gzip, deflate, br",
+                "Sec-Ch-Ua": '"Chromium";v="120", "Not?A_Brand";v="8"',
+                "Sec-Ch-Ua-Mobile": "?0",
+                "Sec-Ch-Ua-Platform": '"macOS"',
+                "Sec-Fetch-Dest": "empty",
+                "Sec-Fetch-Mode": "cors",
+                "Sec-Fetch-Site": "same-origin",
+                "Referer": "https://www.linkedin.com/jobs/search/",
+            }
+
+            try:
+                r = requests.get(url, params=params, headers=headers, timeout=HTTP_TIMEOUT)
+            except requests.RequestException as e:
+                errors.append(f"LinkedIn '{kw}' start={start}: {type(e).__name__}: {e}")
+                break
+
+            if r.status_code == 429 or r.status_code == 999:
+                total_blocked += 1
+                errors.append(f"LinkedIn '{kw}' start={start}: HTTP {r.status_code} (rate-limited/blocked)")
+                # back off, try next keyword
+                break
+            if r.status_code != 200:
+                errors.append(f"LinkedIn '{kw}' start={start}: HTTP {r.status_code}")
+                break
+
+            soup = BeautifulSoup(r.content, "html.parser")
+            cards = soup.find_all("div", class_=re.compile(r"base-card"))
+            if not cards:
+                cards = soup.find_all("li")
+            if not cards:
+                break
+
+            page_count = 0
+            for card in cards:
+                parsed = _parse_linkedin_card(card)
+                if not parsed:
+                    continue
+                jid = parsed["external_id"]
+                if jid in seen_ids:
+                    continue
+                seen_ids.add(jid)
+                page_count += 1
+                total_fetched += 1
+
+                found_company_lower = parsed["_company"].lower()
+                # Match against any target
+                for target_name, match_name in target_names:
+                    mn = match_name.lower()
+                    if mn in found_company_lower or found_company_lower in mn:
+                        jobs_by_company[mn].append({
+                            "external_id": parsed["external_id"],
+                            "title": parsed["title"],
+                            "location": parsed["location"],
+                            "url": parsed["url"],
+                            "updated_at": parsed["updated_at"],
+                            "raw_description": "",
+                        })
+                        break
+
+            if page_count == 0:
+                break  # empty page = end of results for this keyword
+
+            time.sleep(2)  # politeness between pages
+
+        time.sleep(1)  # politeness between keywords
+
+    print(f"  LinkedIn: scanned {total_fetched} jobs across {len(keyword_variants)} keyword variants ({total_blocked} blocked)", flush=True)
+    return jobs_by_company
+
+
+def _parse_linkedin_card(card) -> dict:
+    """Extract job fields from a LinkedIn job card. Returns None if not a valid job card."""
+    # Job URL with ID
+    link = None
+    for a in card.find_all("a", href=True):
+        if "/jobs/view/" in a["href"]:
+            link = a
+            break
+    if not link:
+        return None
+    href = link["href"]
+    m = re.search(r"/jobs/view/(\d+)", href)
+    if not m:
+        return None
+    job_id = m.group(1)
+    clean_url = href.split("?")[0]
+
+    # Title
+    title = ""
+    for sel in ["h3.base-search-card__title", "h3", "span.sr-only"]:
+        el = card.select_one(sel)
+        if el:
+            title = el.get_text(strip=True)
+            if title:
+                break
+
+    # Company
+    company = ""
+    for sel in ["h4.base-search-card__subtitle a", "h4.base-search-card__subtitle", "h4 a", "h4"]:
+        el = card.select_one(sel)
+        if el:
+            company = el.get_text(strip=True)
+            if company:
+                break
+
+    # Location
+    location = ""
+    for sel in ["span.job-search-card__location", ".job-search-card__location"]:
+        el = card.select_one(sel)
+        if el:
+            location = el.get_text(strip=True)
+            if location:
+                break
+
+    # Date posted
+    updated_at = None
+    time_el = card.find("time")
+    if time_el and time_el.get("datetime"):
+        updated_at = time_el["datetime"]
+
+    if not (title and company):
+        return None
+
+    return {
+        "external_id": f"li-{job_id}",
+        "title": title,
+        "_company": company,
+        "location": location,
+        "url": clean_url,
+        "updated_at": updated_at,
+    }
+
+
+# Placeholder fetcher (LinkedIn results come from the cache populated upfront)
+def fetch_linkedin(company: dict, ctx: dict) -> list:
+    cache = ctx.get("linkedin_results", {})
+    match_name = (company.get("linkedin_name") or company["name"]).lower()
+    return cache.get(match_name, [])
 
 
 FETCHERS = {
     "greenhouse": fetch_greenhouse,
     "comeet_html": fetch_comeet_html,
-    "amazon": fetch_amazon,
+    "linkedin": fetch_linkedin,
 }
 
 
 # ============================================================
-# State management
+# State
 # ============================================================
 
 def load_state() -> dict:
@@ -281,7 +391,6 @@ def make_id(company: str, external_id: str) -> str:
 def main():
     with open(COMPANIES_FILE, "r", encoding="utf-8") as f:
         cfg = json.load(f)
-
     filters = cfg["filters"]
     companies = cfg["companies"]
 
@@ -293,7 +402,20 @@ def main():
     seen_ids_by_company = {}
     new_count = 0
     fetch_errors = []
+    ctx = {}
 
+    # Pre-fetch LinkedIn aggregator once for all linkedin-tagged companies
+    linkedin_companies = [c for c in companies if c["ats"] == "linkedin"]
+    if linkedin_companies:
+        target_names = [(c["name"], c.get("linkedin_name") or c["name"]) for c in linkedin_companies]
+        print(f"Fetching LinkedIn aggregator for {len(target_names)} companies...", flush=True)
+        try:
+            ctx["linkedin_results"] = linkedin_search(target_names, fetch_errors)
+        except Exception as e:
+            fetch_errors.append(f"LinkedIn aggregator: {type(e).__name__}: {e}")
+            ctx["linkedin_results"] = {}
+
+    # Process each company
     for c in companies:
         name = c["name"]
         ats = c["ats"]
@@ -304,32 +426,34 @@ def main():
             fetch_errors.append(f"{name}: no fetcher for ats={ats}")
             continue
 
-        identifier = c.get("token") or c.get("url", "?")
-        print(f"Fetching {name} ({ats} / {identifier})...", flush=True)
+        identifier = c.get("token") or c.get("url") or c.get("linkedin_name") or "?"
+        print(f"Processing {name} ({ats} / {identifier})...", flush=True)
         try:
-            raw_jobs = fetcher(c)
+            raw_jobs = fetcher(c, ctx)
         except Exception as e:
             fetch_errors.append(f"{name}: {type(e).__name__}: {e}")
             print(f"  ERROR: {e}", flush=True)
             continue
 
-        if not raw_jobs:
-            fetch_errors.append(f"{name}: 0 jobs returned (treating as fetch error, not closing existing)")
-            print(f"  WARN: 0 jobs returned, skipping close detection for {name}", flush=True)
+        # Safety guard: 0 jobs returned = don't close existing (likely fetch issue, not real)
+        # Exception: linkedin entries with 0 results just mean LinkedIn had no jobs for that company today; 
+        #   we still close existing because the aggregator was successful
+        if not raw_jobs and ats != "linkedin":
+            fetch_errors.append(f"{name}: 0 jobs returned (treating as fetch error)")
+            print(f"  WARN: 0 jobs returned, skipping close detection", flush=True)
             continue
 
         company_ids = set()
-        matched_count = 0
+        matched = 0
         for raw in raw_jobs:
             if not matches_role(raw["title"], filters):
                 continue
             if not matches_location(raw["location"], filters):
                 continue
-            matched_count += 1
+            matched += 1
 
             job_id = make_id(name, raw["external_id"])
             company_ids.add(job_id)
-
             details = parse_description(raw.get("raw_description", ""))
 
             if job_id in existing:
@@ -361,9 +485,10 @@ def main():
                 new_count += 1
                 print(f"  + NEW: {raw['title']} | {raw['location']}", flush=True)
 
-        print(f"  {name}: {len(raw_jobs)} total, {matched_count} match filters", flush=True)
+        print(f"  {name}: {len(raw_jobs)} raw, {matched} match filters", flush=True)
         seen_ids_by_company[name] = company_ids
-        time.sleep(0.5)
+        if ats != "linkedin":
+            time.sleep(0.5)
 
     # Detect closed jobs
     closed_count = 0
