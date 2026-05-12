@@ -1,0 +1,55 @@
+{
+  "_comment": "ATS types: 'greenhouse' (token = subdomain on boards.greenhouse.io), 'lever' (token = subdomain on jobs.lever.co), 'comeet' (token = company slug). For each company, verify the token by visiting their careers page and looking at the URL. Companies marked 'skip:true' use a JS-heavy ATS we can't reliably scrape from a GitHub Action without browser automation.",
+  "companies": [
+    { "name": "Melio",          "ats": "greenhouse", "token": "melio" },
+    { "name": "Monday.com",     "ats": "greenhouse", "token": "mondaycom" },
+    { "name": "Forter",         "ats": "greenhouse", "token": "forter" },
+    { "name": "Riskified",      "ats": "greenhouse", "token": "riskified" },
+    { "name": "Rapyd",          "ats": "greenhouse", "token": "rapyd" },
+    { "name": "Lemonade",       "ats": "greenhouse", "token": "lemonade" },
+    { "name": "Gong",           "ats": "greenhouse", "token": "gong" },
+    { "name": "HoneyBook",      "ats": "greenhouse", "token": "honeybook" },
+    { "name": "Snyk",           "ats": "greenhouse", "token": "snyk" },
+    { "name": "Tipalti",        "ats": "greenhouse", "token": "tipalti" },
+    { "name": "AppsFlyer",      "ats": "comeet",     "token": "appsflyer" },
+    { "name": "Fiverr",         "ats": "comeet",     "token": "fiverr" },
+    { "name": "Lightricks",     "ats": "comeet",     "token": "lightricks" },
+    { "name": "Papaya Global",  "ats": "comeet",     "token": "papayaglobal" },
+    { "name": "JFrog",          "ats": "comeet",     "token": "jfrog" },
+    { "name": "Wix",            "ats": "skip",       "reason": "Workday-based SPA, requires browser automation" },
+    { "name": "Google",         "ats": "skip",       "reason": "JS-rendered careers site" },
+    { "name": "Microsoft",      "ats": "skip",       "reason": "JS-rendered careers site (own API needs auth)" },
+    { "name": "Meta",           "ats": "skip",       "reason": "JS-rendered careers site" },
+    { "name": "Amazon",         "ats": "amazon",     "token": "amazon" },
+    { "name": "Salesforce",     "ats": "skip",       "reason": "Workday-based" },
+    { "name": "Intuit",         "ats": "skip",       "reason": "Workday-based" },
+    { "name": "Apple",          "ats": "skip",       "reason": "JS-rendered careers site" },
+    { "name": "Nvidia",         "ats": "skip",       "reason": "Workday-based, mostly engineering anyway" }
+  ],
+  "filters": {
+    "_comment": "Title must contain ALL of (titleMustMatch) AND at least one of (seniorityIndicators). Title must NOT contain any of (excludeTitle).",
+    "titleMustMatch": ["product"],
+    "seniorityIndicators": [
+      "senior", "sr.", "sr ", "staff", "principal", "lead",
+      "group", "director", "vp", "vice president", "head", "chief"
+    ],
+    "excludeTitle": [
+      "marketing", "designer", "design ", "ux ", "ui ",
+      "engineer", "engineering", "developer", "data scientist",
+      "analyst", "research", "owner", "operations", "ops "
+    ],
+    "locationMustMatch": [
+      "israel", "tel aviv", "tlv", "jerusalem", "haifa", "herzliya",
+      "ra'anana", "raanana", "petach tikva", "petah tikva", "yokneam",
+      "beer sheva", "beersheba", "netanya", "caesarea", "ramat gan",
+      "remote"
+    ],
+    "_excludeRemoteSpecificTo": "Filter out 'Remote - US' type locations that aren't actually open to Israel",
+    "excludeLocation": [
+      "remote - us", "remote, us", "remote (us", "us remote",
+      "remote - canada", "remote canada",
+      "remote - india", "remote india",
+      "remote - latam", "remote latam"
+    ]
+  }
+}
