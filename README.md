@@ -1,6 +1,37 @@
 # Job Tracker
 
-A small system that scrapes product roles (Senior PM and above, Israel + Remote) from a list of target companies daily, tracks which jobs are open/closed, and surfaces it all in a Claude artifact dashboard.
+Scrapes Senior PM-and-above product roles (Israel + Remote) daily from a list of target companies, tracks open/closed status, displays results in a Claude artifact dashboard.
+
+## What's tracked
+
+**Automated (works end-to-end via GitHub Actions cron):**
+
+| Company | ATS | Reliability |
+|---------|-----|-------------|
+| Melio | Greenhouse API | ✅ High |
+| Forter | Greenhouse API | ✅ High |
+| Riskified | Greenhouse API | ✅ High |
+| HoneyBook | Greenhouse API | ✅ High |
+| Amazon | Amazon Jobs API | ✅ High |
+| Monday.com | Custom HTML | ⚠️ Best-effort |
+| AppsFlyer | Custom HTML | ⚠️ Best-effort |
+| Fiverr | Custom HTML | ⚠️ Best-effort |
+| Lightricks | Custom HTML | ⚠️ Best-effort |
+| Papaya Global | Custom HTML | ⚠️ Best-effort |
+| JFrog | Custom HTML | ⚠️ Best-effort |
+
+"Best-effort" means the parser uses the Comeet job UID regex (`XX.XXX` format) to find jobs in HTML. Works as long as the careers page exposes those UIDs in `<a href>` attributes. If a company redesigns their careers site or hides links behind JavaScript, the scraper silently returns 0 jobs and logs an error rather than mass-closing existing entries (safety guard).
+
+**Manual checking required (weekly):**
+
+| Company | Why skipped |
+|---------|-------------|
+| Wix, Google, Microsoft, Meta, Salesforce, Intuit, Apple, Nvidia | JS-rendered or Workday-based SPAs; need browser automation |
+| Lemonade | Custom careers site, not Greenhouse-public |
+| Snyk | JS-rendered SPA at snyk.io/careers |
+| Rapyd, Gong, Tipalti | Likely use Greenhouse but their token isn't obvious; verify by trying `boards.greenhouse.io/<guess>` |
+
+For these, set up LinkedIn job alerts as a fallback — LinkedIn scrapes most of them and emails you on new postings.
 
 ## Architecture
 
@@ -8,14 +39,14 @@ A small system that scrapes product roles (Senior PM and above, Israel + Remote)
 GitHub repo                                  Claude artifact
 ┌─────────────────────────────────────┐      ┌────────────────────┐
 │ .github/workflows/scrape-daily.yml  │      │ job_tracker_       │
-│   (cron, runs at 07:00 UTC)         │      │ dashboard.jsx      │
+│   (cron, 07:00 UTC daily)           │      │ dashboard.jsx      │
 │           │                          │      │                    │
 │           ▼                          │      │  Reads jobs.json   │
-│ scraper.py  ──► fetch ATS APIs      │      │  on Refresh        │
-│   (Greenhouse, Lever, Comeet,        │      │                    │
-│    Amazon)                           │ ───► │  Stores locally    │
-│           │                          │ fetch│  in window.storage │
-│           ▼                          │ raw  │                    │
+│ scraper.py  ──► Greenhouse API      │      │  on Refresh        │
+│              ──► Comeet HTML parse  │ ───► │                    │
+│              ──► Amazon Jobs API    │ fetch│  Stores locally    │
+│           │                          │ raw  │  in window.storage │
+│           ▼                          │      │                    │
 │ data/jobs.json  (committed back)     │      │  Cards, filters,   │
 └─────────────────────────────────────┘      │  detail modal      │
                                               └────────────────────┘
@@ -25,7 +56,7 @@ GitHub repo                                  Claude artifact
 
 ### 1. Create a GitHub repo
 
-Create a new **public** repo (private also works but needs auth on the raw URL). Drop these files in:
+Public repo (so raw URL works without auth). Drop in:
 
 ```
 job-tracker/
@@ -34,88 +65,66 @@ job-tracker/
 ├── scraper.py
 ├── requirements.txt
 ├── data/
-│   └── jobs.json          ← create this empty, see below
+│   └── jobs.json          ← starts as {"lastUpdated": null, "jobs": []}
 └── .github/
     └── workflows/
         └── scrape-daily.yml
 ```
 
-For the initial `data/jobs.json`:
+### 2. Enable workflow write permissions
 
-```json
-{ "lastUpdated": null, "jobs": [] }
+Repo → Settings → Actions → General → Workflow permissions → **Read and write permissions** → Save.
+
+### 3. First run
+
+Actions tab → "Scrape jobs daily" → "Run workflow" → manual trigger. Wait ~1 min. Check `data/jobs.json` got updated.
+
+### 4. Wire up dashboard
+
+In `data/jobs.json`, click "Raw" button, copy URL:
 ```
-
-### 2. Verify company tokens
-
-`companies.json` lists target companies with their ATS provider and slug. Before first run, **verify each token** — they're best-guesses based on common naming. To check:
-
-- Greenhouse: visit `https://boards.greenhouse.io/{token}` — if the careers page loads, the token is right.
-- Lever: `https://jobs.lever.co/{token}` — same idea.
-- Comeet: trickier; some companies use custom domains. Check the careers page URL.
-
-If a token is wrong, the scraper logs an error for that company but keeps going.
-
-### 3. Test locally (optional)
-
-```bash
-pip install -r requirements.txt
-python scraper.py
+https://raw.githubusercontent.com/<you>/job-tracker/main/data/jobs.json
 ```
+Open the dashboard artifact, gear icon, paste URL, Save, Refresh.
 
-You should see fetch logs for each company and a summary at the end. `data/jobs.json` will be populated.
-
-### 4. Enable GitHub Actions
-
-Push everything to GitHub. Go to repo → Settings → Actions → General → Workflow permissions → set to "**Read and write permissions**". This lets the workflow commit `jobs.json` back to the repo.
-
-Then go to the **Actions** tab and run "Scrape jobs daily" manually once via "Run workflow" to confirm it works. After that it runs daily at 07:00 UTC automatically.
-
-### 5. Hook up the dashboard
-
-Open `job_tracker_dashboard.jsx` as a Claude artifact. Click the Settings gear and paste your raw GitHub URL:
-
-```
-https://raw.githubusercontent.com/{your-username}/job-tracker/main/data/jobs.json
-```
-
-Save → click Refresh → done.
-
-## How it tracks "open" vs "closed"
-
-- Every job pulled from an ATS that matches the title + location filters gets stored with `status: open`.
-- If on the next run a job that was previously open is **no longer returned by the API**, it's marked `closed` with today's date.
-- **Safety guard:** if a company returns 0 jobs (likely a fetch error, not actually empty), the scraper does NOT close that company's existing jobs. Errors are logged in `state.fetchErrors`.
-
-## How it categorizes job details
-
-For each job's description, `parse_description()` does a heuristic split looking for common section headers ("About us", "Responsibilities", "Requirements", etc.) and routes content into the five fields the dashboard expects:
-- Company details
-- Product details
-- Job description
-- Requirements
-- Other
-
-If the heuristic can't find any section headers (some job posts are unstructured), the whole description lands in "Job description".
-
-## Filters
+## Updating filters
 
 In `companies.json` under `filters`:
 
-- **`titleMustMatch`**: title must contain "product"
-- **`seniorityIndicators`**: title must contain one of: senior, sr., staff, principal, lead, group, director, vp, head, chief
-- **`excludeTitle`**: excludes Product Marketing, Designer, Engineer, Analyst, Owner, Ops, etc.
-- **`locationMustMatch`**: Israel cities OR "remote"
-- **`excludeLocation`**: excludes "Remote - US", "Remote India", etc.
+- `titleMustMatch` — must contain "product"
+- `seniorityIndicators` — at least one of: senior, sr, staff, principal, lead, group, director, vp, head, chief
+- `excludeTitle` — excludes: marketing, designer, engineer, analyst, owner, ops, etc.
+- `locationMustMatch` — Israeli cities OR "remote"
+- `excludeLocation` — excludes "Remote - US", "Remote India", etc.
 
-Tweak these to your taste. After tweaking, rerun the scraper — the next run will reapply filters on the full ATS response.
-
-## Limitations
-
-- **Skipped companies**: Wix, Google, Microsoft, Meta, Salesforce, Intuit, Apple, Nvidia all use JS-rendered career pages or Workday tenants. They need browser automation (Playwright in CI) to scrape reliably — added complexity that this MVP skips. Amazon is supported via their `amazon.jobs` JSON.
-- **Publish date for jobs already on the board**: For jobs we discover on the first run, we use the ATS's reported `updated_at` (Greenhouse) or `createdAt` (Lever). For Comeet that field isn't always reliable. So "publish date" is a best-effort, not always exact.
-- **Description parsing**: heuristic, not perfect. Some posts will land mostly in "Job description" and that's fine.
+Edit and commit. Next run re-applies filters.
 
 ## Adding more companies
 
-Append to `companies.json`. If they use Greenhouse/Lever/Comeet, just add the entry. If they use something custom, add a new `fetch_*()` function in `scraper.py` and register it in `FETCHERS`.
+**If they use Greenhouse**: Visit `boards.greenhouse.io/<your-guess>`. If the page loads, add:
+```json
+{ "name": "CompanyName", "ats": "greenhouse", "token": "your-guess" }
+```
+
+**If they use Comeet (job URLs contain `XX.XXX` patterns)**: Add:
+```json
+{ "name": "CompanyName", "ats": "comeet_html", "url": "https://company.com/careers" }
+```
+
+**Custom HTML site**: You'll need to add a new fetcher function in `scraper.py` and register it in the `FETCHERS` dict at the top.
+
+## Verifying unconfirmed Greenhouse tokens
+
+Three companies (Rapyd, Gong, Tipalti) probably use Greenhouse but their slug isn't obvious. Quick way to verify:
+
+1. Open `https://boards.greenhouse.io/<guess>` in browser
+2. If the careers page loads → that slug works → update companies.json with `"ats": "greenhouse", "token": "<guess>"`
+3. If 404 → try variations (e.g., `gonghire`, `rapydpayments`, `tipaltihq`)
+
+Once a token works, the next workflow run will pick up that company's jobs automatically.
+
+## Limitations
+
+- **Comeet HTML parsing is fragile**: relies on the careers page exposing job links with the Comeet UID pattern. If a company changes their careers page design, the parser may silently return 0 jobs — logged in `fetchErrors`, not catastrophic.
+- **Title/location parsing for Comeet jobs**: works well when title/location are in separate HTML elements (the common case). When everything's concatenated in one text node, the parser does its best using a regex for trailing "City, CC" patterns; titles with embedded acronyms (like "VP Product") can get split incorrectly.
+- **No detailed description for Comeet jobs**: the scraper only grabs title + location from the listing page, not the full description (would require an extra HTTP call per job). The dashboard shows just the title/location/link for those.
