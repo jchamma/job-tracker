@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-12T21:49:59.188834+00:00",
+  "lastUpdated": "2026-05-13T09:41:42.509748+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -85,8 +85,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-of-product-ai-at-jfrog-4365088437",
       "publishDate": "2026-05-07",
       "discoveredDate": "2026-05-12",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-05-13",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -199,8 +199,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-of-product-management-at-tipalti-4404579371",
       "publishDate": "2026-04-24",
       "discoveredDate": "2026-05-12",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-05-13",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -237,6 +237,120 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-nvlink-at-nvidia-4395482216",
       "publishDate": "2026-04-29",
       "discoveredDate": "2026-05-12",
+      "closingDate": "2026-05-13",
+      "status": "closed",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "jfrog-li-4413040356",
+      "company": "JFrog",
+      "title": "Senior Product Manager - JFrog Security",
+      "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/senior-product-manager-jfrog-security-at-jfrog-4413040356",
+      "publishDate": "2026-05-11",
+      "discoveredDate": "2026-05-13",
+      "closingDate": null,
+      "status": "open",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "jfrog-li-4343547588",
+      "company": "JFrog",
+      "title": "Principal Product Manager",
+      "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/principal-product-manager-at-jfrog-4343547588",
+      "publishDate": "2026-04-23",
+      "discoveredDate": "2026-05-13",
+      "closingDate": null,
+      "status": "open",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "jfrog-li-4413033703",
+      "company": "JFrog",
+      "title": "Senior Product Manager, AI-Native Security",
+      "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/senior-product-manager-ai-native-security-at-jfrog-4413033703",
+      "publishDate": "2026-05-11",
+      "discoveredDate": "2026-05-13",
+      "closingDate": null,
+      "status": "open",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "jfrog-li-4263967501",
+      "company": "JFrog",
+      "title": "Senior Product Manager",
+      "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-jfrog-4263967501",
+      "publishDate": "2026-05-04",
+      "discoveredDate": "2026-05-13",
+      "closingDate": null,
+      "status": "open",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "lemonade-li-4385134506",
+      "company": "Lemonade",
+      "title": "Senior Product Manager - Claims Experience",
+      "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/senior-product-manager-claims-experience-at-lemonade-4385134506",
+      "publishDate": "2026-04-28",
+      "discoveredDate": "2026-05-13",
+      "closingDate": null,
+      "status": "open",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "lemonade-li-4402060698",
+      "company": "Lemonade",
+      "title": "Senior Product Manager, Partners Experience",
+      "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/senior-product-manager-partners-experience-at-lemonade-4402060698",
+      "publishDate": "2026-04-28",
+      "discoveredDate": "2026-05-13",
       "closingDate": null,
       "status": "open",
       "details": {
