@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-13T09:41:42.509748+00:00",
+  "lastUpdated": "2026-05-14T09:31:23.841773+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -199,8 +199,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-of-product-management-at-tipalti-4404579371",
       "publishDate": "2026-04-24",
       "discoveredDate": "2026-05-12",
-      "closingDate": "2026-05-13",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -237,8 +237,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-nvlink-at-nvidia-4395482216",
       "publishDate": "2026-04-29",
       "discoveredDate": "2026-05-12",
-      "closingDate": "2026-05-13",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -275,8 +275,8 @@
       "url": "https://il.linkedin.com/jobs/view/principal-product-manager-at-jfrog-4343547588",
       "publishDate": "2026-04-23",
       "discoveredDate": "2026-05-13",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-05-14",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -351,6 +351,44 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-partners-experience-at-lemonade-4402060698",
       "publishDate": "2026-04-28",
       "discoveredDate": "2026-05-13",
+      "closingDate": null,
+      "status": "open",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "jfrog-li-4404745018",
+      "company": "JFrog",
+      "title": "Senior Product Manager – Growth",
+      "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/senior-product-manager-%E2%80%93-growth-at-jfrog-4404745018",
+      "publishDate": "2026-05-05",
+      "discoveredDate": "2026-05-14",
+      "closingDate": null,
+      "status": "open",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "gong-li-4388798605",
+      "company": "Gong",
+      "title": "Senior Product Manager - Forecast",
+      "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/senior-product-manager-forecast-at-gong-4388798605",
+      "publishDate": "2026-05-04",
+      "discoveredDate": "2026-05-14",
       "closingDate": null,
       "status": "open",
       "details": {
