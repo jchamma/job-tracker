@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-14T09:31:23.841773+00:00",
+  "lastUpdated": "2026-05-15T09:43:58.076074+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -237,8 +237,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-nvlink-at-nvidia-4395482216",
       "publishDate": "2026-04-29",
       "discoveredDate": "2026-05-12",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-05-15",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -256,8 +256,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-jfrog-security-at-jfrog-4413040356",
       "publishDate": "2026-05-11",
       "discoveredDate": "2026-05-13",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-05-15",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -275,8 +275,8 @@
       "url": "https://il.linkedin.com/jobs/view/principal-product-manager-at-jfrog-4343547588",
       "publishDate": "2026-04-23",
       "discoveredDate": "2026-05-13",
-      "closingDate": "2026-05-14",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -294,8 +294,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-ai-native-security-at-jfrog-4413033703",
       "publishDate": "2026-05-11",
       "discoveredDate": "2026-05-13",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-05-15",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
