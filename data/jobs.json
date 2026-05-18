@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-17T09:01:48.396344+00:00",
+  "lastUpdated": "2026-05-18T11:04:31.238730+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -85,8 +85,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-of-product-ai-at-jfrog-4365088437",
       "publishDate": "2026-05-07",
       "discoveredDate": "2026-05-12",
-      "closingDate": "2026-05-13",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -313,8 +313,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-jfrog-4263967501",
       "publishDate": "2026-05-04",
       "discoveredDate": "2026-05-13",
-      "closingDate": "2026-05-17",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -389,8 +389,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-forecast-at-gong-4388798605",
       "publishDate": "2026-05-04",
       "discoveredDate": "2026-05-14",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-05-18",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
