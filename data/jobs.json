@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-18T11:04:31.238730+00:00",
+  "lastUpdated": "2026-05-19T10:35:29.005929+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -85,8 +85,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-of-product-ai-at-jfrog-4365088437",
       "publishDate": "2026-05-07",
       "discoveredDate": "2026-05-12",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-05-19",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -180,8 +180,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-tipalti-4412572812",
       "publishDate": "2026-05-10",
       "discoveredDate": "2026-05-12",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-05-19",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -199,8 +199,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-of-product-management-at-tipalti-4404579371",
       "publishDate": "2026-04-24",
       "discoveredDate": "2026-05-12",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-05-19",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -237,8 +237,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-nvlink-at-nvidia-4395482216",
       "publishDate": "2026-04-29",
       "discoveredDate": "2026-05-12",
-      "closingDate": "2026-05-15",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -351,8 +351,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-partners-experience-at-lemonade-4402060698",
       "publishDate": "2026-04-28",
       "discoveredDate": "2026-05-13",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-05-19",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -370,8 +370,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-%E2%80%93-growth-at-jfrog-4404745018",
       "publishDate": "2026-05-05",
       "discoveredDate": "2026-05-14",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-05-19",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -391,6 +391,25 @@
       "discoveredDate": "2026-05-14",
       "closingDate": "2026-05-18",
       "status": "closed",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "tipalti-li-4416424875",
+      "company": "Tipalti",
+      "title": "Director of Product Management",
+      "location": "Tel Aviv District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/director-of-product-management-at-tipalti-4416424875",
+      "publishDate": "2026-05-18",
+      "discoveredDate": "2026-05-19",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
