@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-20T10:22:44.832484+00:00",
+  "lastUpdated": "2026-05-21T10:37:20.641377+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -218,8 +218,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-pet-claims-experience-at-lemonade-4407181997",
       "publishDate": "2026-04-29",
       "discoveredDate": "2026-05-12",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-05-21",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -237,8 +237,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-nvlink-at-nvidia-4395482216",
       "publishDate": "2026-04-29",
       "discoveredDate": "2026-05-12",
-      "closingDate": "2026-05-20",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -313,8 +313,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-jfrog-4263967501",
       "publishDate": "2026-05-04",
       "discoveredDate": "2026-05-13",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-05-21",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -370,8 +370,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-%E2%80%93-growth-at-jfrog-4404745018",
       "publishDate": "2026-05-05",
       "discoveredDate": "2026-05-14",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-05-21",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -408,6 +408,44 @@
       "url": "https://il.linkedin.com/jobs/view/director-of-product-management-at-tipalti-4416424875",
       "publishDate": "2026-05-18",
       "discoveredDate": "2026-05-19",
+      "closingDate": "2026-05-21",
+      "status": "closed",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "jfrog-li-4416361987",
+      "company": "JFrog",
+      "title": "Senior Product Manager – Growth",
+      "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/senior-product-manager-%E2%80%93-growth-at-jfrog-4416361987",
+      "publishDate": "2026-05-21",
+      "discoveredDate": "2026-05-21",
+      "closingDate": null,
+      "status": "open",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "jfrog-li-4416366875",
+      "company": "JFrog",
+      "title": "Senior Product Manager - JFrog Security",
+      "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/senior-product-manager-jfrog-security-at-jfrog-4416366875",
+      "publishDate": "2026-05-21",
+      "discoveredDate": "2026-05-21",
       "closingDate": null,
       "status": "open",
       "details": {
