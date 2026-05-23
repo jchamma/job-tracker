@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-22T10:22:15.367088+00:00",
+  "lastUpdated": "2026-05-23T09:00:24.922967+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -104,8 +104,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-of-product-management-at-jfrog-4258077351",
       "publishDate": "2026-04-22",
       "discoveredDate": "2026-05-12",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-05-23",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -180,8 +180,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-tipalti-4412572812",
       "publishDate": "2026-05-10",
       "discoveredDate": "2026-05-12",
-      "closingDate": "2026-05-22",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -218,8 +218,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-pet-claims-experience-at-lemonade-4407181997",
       "publishDate": "2026-04-29",
       "discoveredDate": "2026-05-12",
-      "closingDate": "2026-05-21",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -313,8 +313,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-jfrog-4263967501",
       "publishDate": "2026-05-04",
       "discoveredDate": "2026-05-13",
-      "closingDate": "2026-05-21",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -332,8 +332,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-claims-experience-at-lemonade-4385134506",
       "publishDate": "2026-04-28",
       "discoveredDate": "2026-05-13",
-      "closingDate": "2026-05-22",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -351,8 +351,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-partners-experience-at-lemonade-4402060698",
       "publishDate": "2026-04-28",
       "discoveredDate": "2026-05-13",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-05-23",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -448,6 +448,25 @@
       "discoveredDate": "2026-05-21",
       "closingDate": "2026-05-22",
       "status": "closed",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "jfrog-li-4416363885",
+      "company": "JFrog",
+      "title": "Senior Product Manager, AI-Native Security",
+      "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/senior-product-manager-ai-native-security-at-jfrog-4416363885",
+      "publishDate": "2026-05-21",
+      "discoveredDate": "2026-05-23",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
