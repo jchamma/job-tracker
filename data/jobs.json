@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-24T09:19:14.850457+00:00",
+  "lastUpdated": "2026-05-25T11:07:38.697960+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -9,8 +9,8 @@
       "url": "https://job-boards.greenhouse.io/forter/jobs/8524208002",
       "publishDate": "2026-04-30",
       "discoveredDate": "2026-05-12",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-05-25",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -142,8 +142,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-product-r-d-strategic-finance-fp-a-at-gong-4362772241",
       "publishDate": "2026-05-05",
       "discoveredDate": "2026-05-12",
-      "closingDate": "2026-05-24",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -313,8 +313,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-jfrog-4263967501",
       "publishDate": "2026-05-04",
       "discoveredDate": "2026-05-13",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-05-25",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -351,8 +351,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-partners-experience-at-lemonade-4402060698",
       "publishDate": "2026-04-28",
       "discoveredDate": "2026-05-13",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-05-25",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -427,8 +427,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-%E2%80%93-growth-at-jfrog-4416361987",
       "publishDate": "2026-05-21",
       "discoveredDate": "2026-05-21",
-      "closingDate": "2026-05-22",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -446,8 +446,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-jfrog-security-at-jfrog-4416366875",
       "publishDate": "2026-05-21",
       "discoveredDate": "2026-05-21",
-      "closingDate": "2026-05-22",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -465,8 +465,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-ai-native-security-at-jfrog-4416363885",
       "publishDate": "2026-05-21",
       "discoveredDate": "2026-05-23",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-05-25",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
