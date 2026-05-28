@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-27T10:53:22.429463+00:00",
+  "lastUpdated": "2026-05-28T10:52:53.703759+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -66,8 +66,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-applied-ai-at-fiverr-4402130407",
       "publishDate": "2026-05-08",
       "discoveredDate": "2026-05-12",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-05-28",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -123,8 +123,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-manager-product-management-at-jfrog-4323201944",
       "publishDate": "2026-05-08",
       "discoveredDate": "2026-05-12",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-05-28",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -180,8 +180,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-tipalti-4412572812",
       "publishDate": "2026-05-10",
       "discoveredDate": "2026-05-12",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-05-28",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -408,8 +408,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-of-product-management-at-tipalti-4416424875",
       "publishDate": "2026-05-18",
       "discoveredDate": "2026-05-19",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-05-28",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -427,8 +427,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-%E2%80%93-growth-at-jfrog-4416361987",
       "publishDate": "2026-05-21",
       "discoveredDate": "2026-05-21",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-05-28",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -479,7 +479,7 @@
     {
       "id": "melio-7741403003",
       "company": "Melio",
-      "title": "Senior Product Manager- Melio.com",
+      "title": "Senior Product Manager",
       "location": "Tel Aviv",
       "url": "https://job-boards.greenhouse.io/melio/jobs/7741403003",
       "publishDate": "2026-05-26",
@@ -503,8 +503,8 @@
       "url": "https://il.linkedin.com/jobs/view/product-manager-lead-at-papaya-global-4419190654",
       "publishDate": "2026-05-26",
       "discoveredDate": "2026-05-27",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-05-28",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -522,6 +522,25 @@
       "url": "https://il.linkedin.com/jobs/view/senior-payments-product-manager-relocation-to-amsterdam-at-lemonade-4419830465",
       "publishDate": "2026-05-27",
       "discoveredDate": "2026-05-27",
+      "closingDate": null,
+      "status": "open",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "fiverr-li-4418826431",
+      "company": "Fiverr",
+      "title": "Senior Product Manager",
+      "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-fiverr-4418826431",
+      "publishDate": "2026-05-27",
+      "discoveredDate": "2026-05-28",
       "closingDate": null,
       "status": "open",
       "details": {
