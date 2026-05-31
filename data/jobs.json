@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-30T09:12:26.458581+00:00",
+  "lastUpdated": "2026-05-31T09:45:51.654448+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -66,8 +66,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-applied-ai-at-fiverr-4402130407",
       "publishDate": "2026-05-08",
       "discoveredDate": "2026-05-12",
-      "closingDate": "2026-05-30",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -123,8 +123,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-manager-product-management-at-jfrog-4323201944",
       "publishDate": "2026-05-08",
       "discoveredDate": "2026-05-12",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-05-31",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -161,8 +161,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-enterprise-user-management-at-gong-4401728631",
       "publishDate": "2026-05-05",
       "discoveredDate": "2026-05-12",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-05-31",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -180,8 +180,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-tipalti-4412572812",
       "publishDate": "2026-05-10",
       "discoveredDate": "2026-05-12",
-      "closingDate": "2026-05-28",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -275,8 +275,8 @@
       "url": "https://il.linkedin.com/jobs/view/principal-product-manager-at-jfrog-4343547588",
       "publishDate": "2026-04-23",
       "discoveredDate": "2026-05-13",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-05-31",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -427,8 +427,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-%E2%80%93-growth-at-jfrog-4416361987",
       "publishDate": "2026-05-21",
       "discoveredDate": "2026-05-21",
-      "closingDate": "2026-05-30",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -560,8 +560,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-ai-agentic-solutions-at-monday-com-4404682190",
       "publishDate": "2026-05-18",
       "discoveredDate": "2026-05-30",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-05-31",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -579,8 +579,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-analytics-at-appsflyer-4382896696",
       "publishDate": "2026-05-15",
       "discoveredDate": "2026-05-30",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-05-31",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -598,8 +598,8 @@
       "url": "https://il.linkedin.com/jobs/view/sr-staff-product-manager-quickbooks-money-at-intuit-4413898495",
       "publishDate": "2026-05-13",
       "discoveredDate": "2026-05-30",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-05-31",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -617,6 +617,25 @@
       "url": "https://il.linkedin.com/jobs/view/senior-networking-software-product-manager-%E2%80%93-doca-at-nvidia-4395490137",
       "publishDate": "2026-05-21",
       "discoveredDate": "2026-05-30",
+      "closingDate": "2026-05-31",
+      "status": "closed",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "lemonade-li-4421311044",
+      "company": "Lemonade",
+      "title": "Senior Payments Product Manager (relocation to Amsterdam)",
+      "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/senior-payments-product-manager-relocation-to-amsterdam-at-lemonade-4421311044",
+      "publishDate": "2026-05-30",
+      "discoveredDate": "2026-05-31",
       "closingDate": null,
       "status": "open",
       "details": {
