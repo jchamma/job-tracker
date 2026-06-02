@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-01T12:33:20.526068+00:00",
+  "lastUpdated": "2026-06-02T11:14:28.212909+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -161,8 +161,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-enterprise-user-management-at-gong-4401728631",
       "publishDate": "2026-05-05",
       "discoveredDate": "2026-05-12",
-      "closingDate": "2026-05-31",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -332,8 +332,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-claims-experience-at-lemonade-4385134506",
       "publishDate": "2026-04-28",
       "discoveredDate": "2026-05-13",
-      "closingDate": "2026-06-01",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -427,8 +427,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-%E2%80%93-growth-at-jfrog-4416361987",
       "publishDate": "2026-05-21",
       "discoveredDate": "2026-05-21",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-06-02",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -598,8 +598,8 @@
       "url": "https://il.linkedin.com/jobs/view/sr-staff-product-manager-quickbooks-money-at-intuit-4413898495",
       "publishDate": "2026-05-13",
       "discoveredDate": "2026-05-30",
-      "closingDate": "2026-05-31",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -617,8 +617,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-networking-software-product-manager-%E2%80%93-doca-at-nvidia-4395490137",
       "publishDate": "2026-05-21",
       "discoveredDate": "2026-05-30",
-      "closingDate": "2026-05-31",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -674,8 +674,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-pet-claims-experience-at-lemonade-4421628597",
       "publishDate": "2026-06-01",
       "discoveredDate": "2026-06-01",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-06-02",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -693,6 +693,25 @@
       "url": "https://il.linkedin.com/jobs/view/principal-product-manager-mtp-at-microsoft-4421822193",
       "publishDate": "2026-06-01",
       "discoveredDate": "2026-06-01",
+      "closingDate": "2026-06-02",
+      "status": "closed",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "papaya-global-li-4421855528",
+      "company": "Papaya Global",
+      "title": "Senior Product Manager",
+      "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-papaya-4421855528",
+      "publishDate": "2026-06-01",
+      "discoveredDate": "2026-06-02",
       "closingDate": null,
       "status": "open",
       "details": {
