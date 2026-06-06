@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-05T10:43:30.650328+00:00",
+  "lastUpdated": "2026-06-06T09:22:41.876421+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -161,8 +161,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-enterprise-user-management-at-gong-4401728631",
       "publishDate": "2026-05-05",
       "discoveredDate": "2026-05-12",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-06-06",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -332,8 +332,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-claims-experience-at-lemonade-4385134506",
       "publishDate": "2026-04-28",
       "discoveredDate": "2026-05-13",
-      "closingDate": "2026-06-05",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -446,8 +446,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-jfrog-security-at-jfrog-4416366875",
       "publishDate": "2026-05-21",
       "discoveredDate": "2026-05-21",
-      "closingDate": "2026-06-05",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -579,8 +579,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-analytics-at-appsflyer-4382896696",
       "publishDate": "2026-05-15",
       "discoveredDate": "2026-05-30",
-      "closingDate": "2026-06-04",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -693,8 +693,8 @@
       "url": "https://il.linkedin.com/jobs/view/principal-product-manager-mtp-at-microsoft-4421822193",
       "publishDate": "2026-06-01",
       "discoveredDate": "2026-06-01",
-      "closingDate": "2026-06-02",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -807,6 +807,25 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-jfrog-4424217039",
       "publishDate": "2026-06-03",
       "discoveredDate": "2026-06-05",
+      "closingDate": "2026-06-06",
+      "status": "closed",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "microsoft-li-4424701754",
+      "company": "Microsoft",
+      "title": "Senior Product Manager",
+      "location": "Herzliya, Tel Aviv District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-microsoft-4424701754",
+      "publishDate": "2026-06-05",
+      "discoveredDate": "2026-06-06",
       "closingDate": null,
       "status": "open",
       "details": {
