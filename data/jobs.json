@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-10T10:53:02.596964+00:00",
+  "lastUpdated": "2026-06-11T11:20:25.638948+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -161,8 +161,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-enterprise-user-management-at-gong-4401728631",
       "publishDate": "2026-05-05",
       "discoveredDate": "2026-05-12",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-06-11",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -237,8 +237,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-nvlink-at-nvidia-4395482216",
       "publishDate": "2026-04-29",
       "discoveredDate": "2026-05-12",
-      "closingDate": "2026-06-10",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -560,8 +560,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-ai-agentic-solutions-at-monday-com-4404682190",
       "publishDate": "2026-05-18",
       "discoveredDate": "2026-05-30",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-06-11",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -579,8 +579,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-analytics-at-appsflyer-4382896696",
       "publishDate": "2026-05-15",
       "discoveredDate": "2026-05-30",
-      "closingDate": "2026-06-07",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -636,8 +636,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-payments-product-manager-relocation-to-amsterdam-at-lemonade-4421311044",
       "publishDate": "2026-05-30",
       "discoveredDate": "2026-05-31",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-06-11",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -731,8 +731,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-monday-com-4422966638",
       "publishDate": "2026-06-03",
       "discoveredDate": "2026-06-04",
-      "closingDate": "2026-06-09",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -769,8 +769,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-of-product-management-at-jfrog-4424094896",
       "publishDate": "2026-06-03",
       "discoveredDate": "2026-06-04",
-      "closingDate": "2026-06-10",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -845,6 +845,25 @@
       "url": "https://il.linkedin.com/jobs/view/principal-product-manager-at-jfrog-4424217025",
       "publishDate": "2026-06-03",
       "discoveredDate": "2026-06-10",
+      "closingDate": null,
+      "status": "open",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "fiverr-li-4425821827",
+      "company": "Fiverr",
+      "title": "Senior Product Manager - Applied AI",
+      "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/senior-product-manager-applied-ai-at-fiverr-4425821827",
+      "publishDate": "2026-06-09",
+      "discoveredDate": "2026-06-11",
       "closingDate": null,
       "status": "open",
       "details": {
