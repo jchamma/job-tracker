@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-11T11:20:25.638948+00:00",
+  "lastUpdated": "2026-06-12T10:58:57.447216+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -427,8 +427,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-%E2%80%93-growth-at-jfrog-4416361987",
       "publishDate": "2026-05-21",
       "discoveredDate": "2026-05-21",
-      "closingDate": "2026-06-09",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -446,8 +446,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-jfrog-security-at-jfrog-4416366875",
       "publishDate": "2026-05-21",
       "discoveredDate": "2026-05-21",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-06-12",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -579,8 +579,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-analytics-at-appsflyer-4382896696",
       "publishDate": "2026-05-15",
       "discoveredDate": "2026-05-30",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-06-12",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -636,8 +636,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-payments-product-manager-relocation-to-amsterdam-at-lemonade-4421311044",
       "publishDate": "2026-05-30",
       "discoveredDate": "2026-05-31",
-      "closingDate": "2026-06-11",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -655,8 +655,8 @@
       "url": "https://il.linkedin.com/jobs/view/product-manager-lead-at-papaya-global-4418749818",
       "publishDate": "2026-06-01",
       "discoveredDate": "2026-06-01",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-06-12",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -864,6 +864,25 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-applied-ai-at-fiverr-4425821827",
       "publishDate": "2026-06-09",
       "discoveredDate": "2026-06-11",
+      "closingDate": "2026-06-12",
+      "status": "closed",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "tipalti-li-4427571058",
+      "company": "Tipalti",
+      "title": "Senior Product Manager",
+      "location": "Tel Aviv District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-tipalti-4427571058",
+      "publishDate": "2026-06-11",
+      "discoveredDate": "2026-06-12",
       "closingDate": null,
       "status": "open",
       "details": {
