@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-14T10:21:55.938488+00:00",
+  "lastUpdated": "2026-06-15T13:09:45.120746+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -446,8 +446,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-jfrog-security-at-jfrog-4416366875",
       "publishDate": "2026-05-21",
       "discoveredDate": "2026-05-21",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-06-15",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -655,8 +655,8 @@
       "url": "https://il.linkedin.com/jobs/view/product-manager-lead-at-papaya-global-4418749818",
       "publishDate": "2026-06-01",
       "discoveredDate": "2026-06-01",
-      "closingDate": "2026-06-12",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -731,8 +731,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-monday-com-4422966638",
       "publishDate": "2026-06-03",
       "discoveredDate": "2026-06-04",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-06-15",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -788,8 +788,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-of-product-ai-at-jfrog-4424098534",
       "publishDate": "2026-06-03",
       "discoveredDate": "2026-06-04",
-      "closingDate": "2026-06-13",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -807,8 +807,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-jfrog-4424217039",
       "publishDate": "2026-06-03",
       "discoveredDate": "2026-06-05",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-06-15",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -864,8 +864,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-applied-ai-at-fiverr-4425821827",
       "publishDate": "2026-06-09",
       "discoveredDate": "2026-06-11",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-06-15",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -883,6 +883,63 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-tipalti-4427571058",
       "publishDate": "2026-06-11",
       "discoveredDate": "2026-06-12",
+      "closingDate": null,
+      "status": "open",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "monday-com-li-4428643594",
+      "company": "Monday.com",
+      "title": "Senior Product Manager",
+      "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-monday-com-4428643594",
+      "publishDate": "2026-06-14",
+      "discoveredDate": "2026-06-15",
+      "closingDate": null,
+      "status": "open",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "jfrog-li-4427465759",
+      "company": "JFrog",
+      "title": "Senior Product Manager",
+      "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-jfrog-4427465759",
+      "publishDate": "2026-06-15",
+      "discoveredDate": "2026-06-15",
+      "closingDate": null,
+      "status": "open",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "jfrog-li-4427493213",
+      "company": "JFrog",
+      "title": "Senior Product Manager – Growth",
+      "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/senior-product-manager-%E2%80%93-growth-at-jfrog-4427493213",
+      "publishDate": "2026-06-15",
+      "discoveredDate": "2026-06-15",
       "closingDate": null,
       "status": "open",
       "details": {
