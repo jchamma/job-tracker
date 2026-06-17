@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-16T12:09:46.094982+00:00",
+  "lastUpdated": "2026-06-17T11:43:59.959435+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -142,8 +142,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-product-r-d-strategic-finance-fp-a-at-gong-4362772241",
       "publishDate": "2026-05-05",
       "discoveredDate": "2026-05-12",
-      "closingDate": "2026-05-29",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -446,8 +446,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-jfrog-security-at-jfrog-4416366875",
       "publishDate": "2026-05-21",
       "discoveredDate": "2026-05-21",
-      "closingDate": "2026-06-15",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -655,8 +655,8 @@
       "url": "https://il.linkedin.com/jobs/view/product-manager-lead-at-papaya-global-4418749818",
       "publishDate": "2026-06-01",
       "discoveredDate": "2026-06-01",
-      "closingDate": "2026-06-16",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -864,8 +864,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-applied-ai-at-fiverr-4425821827",
       "publishDate": "2026-06-09",
       "discoveredDate": "2026-06-11",
-      "closingDate": "2026-06-15",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -921,8 +921,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-jfrog-4427465759",
       "publishDate": "2026-06-15",
       "discoveredDate": "2026-06-15",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-06-17",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -978,8 +978,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-doca-process-and-productivity-at-nvidia-ai-4426481007",
       "publishDate": "2026-06-16",
       "discoveredDate": "2026-06-16",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-06-17",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -997,6 +997,63 @@
       "url": "https://il.linkedin.com/jobs/view/director-doca-process-and-productivity-at-nvidia-4427783339",
       "publishDate": "2026-06-16",
       "discoveredDate": "2026-06-16",
+      "closingDate": "2026-06-17",
+      "status": "closed",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "nvidia-li-4428427029",
+      "company": "Nvidia",
+      "title": "Senior Product Manager - Internal AI and Employee Productivity",
+      "location": "Yokneam Ilit, North District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/senior-product-manager-internal-ai-and-employee-productivity-at-nvidia-4428427029",
+      "publishDate": "2026-06-17",
+      "discoveredDate": "2026-06-17",
+      "closingDate": null,
+      "status": "open",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "nvidia-li-4428425054",
+      "company": "Nvidia",
+      "title": "Senior Product Manager - Internal AI and Employee Productivity",
+      "location": "Tel Aviv District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/senior-product-manager-internal-ai-and-employee-productivity-at-nvidia-4428425054",
+      "publishDate": "2026-06-17",
+      "discoveredDate": "2026-06-17",
+      "closingDate": null,
+      "status": "open",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "nvidia-li-4427302957",
+      "company": "Nvidia",
+      "title": "Senior Product Manager - Internal AI and Employee Productivity",
+      "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/senior-product-manager-internal-ai-and-employee-productivity-at-nvidia-ai-4427302957",
+      "publishDate": "2026-06-17",
+      "discoveredDate": "2026-06-17",
       "closingDate": null,
       "status": "open",
       "details": {
