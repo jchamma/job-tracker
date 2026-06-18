@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-17T11:43:59.959435+00:00",
+  "lastUpdated": "2026-06-18T11:06:48.576125+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -142,8 +142,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-product-r-d-strategic-finance-fp-a-at-gong-4362772241",
       "publishDate": "2026-05-05",
       "discoveredDate": "2026-05-12",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-06-18",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -408,8 +408,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-of-product-management-at-tipalti-4416424875",
       "publishDate": "2026-05-18",
       "discoveredDate": "2026-05-19",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-06-18",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -636,8 +636,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-payments-product-manager-relocation-to-amsterdam-at-lemonade-4421311044",
       "publishDate": "2026-05-30",
       "discoveredDate": "2026-05-31",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-06-18",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -674,8 +674,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-pet-claims-experience-at-lemonade-4421628597",
       "publishDate": "2026-06-01",
       "discoveredDate": "2026-06-01",
-      "closingDate": "2026-06-16",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -769,8 +769,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-of-product-management-at-jfrog-4424094896",
       "publishDate": "2026-06-03",
       "discoveredDate": "2026-06-04",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-06-18",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -864,8 +864,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-applied-ai-at-fiverr-4425821827",
       "publishDate": "2026-06-09",
       "discoveredDate": "2026-06-11",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-06-18",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -959,8 +959,8 @@
       "url": "https://il.linkedin.com/jobs/view/group-product-manager-growth-at-monday-com-4429113236",
       "publishDate": "2026-06-15",
       "discoveredDate": "2026-06-16",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-06-18",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1035,8 +1035,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-internal-ai-and-employee-productivity-at-nvidia-4428425054",
       "publishDate": "2026-06-17",
       "discoveredDate": "2026-06-17",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-06-18",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1054,6 +1054,63 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-internal-ai-and-employee-productivity-at-nvidia-ai-4427302957",
       "publishDate": "2026-06-17",
       "discoveredDate": "2026-06-17",
+      "closingDate": null,
+      "status": "open",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "monday-com-li-4428642630",
+      "company": "Monday.com",
+      "title": "Senior Product Manager - AI Agentic Solutions",
+      "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/senior-product-manager-ai-agentic-solutions-at-monday-com-4428642630",
+      "publishDate": "2026-06-14",
+      "discoveredDate": "2026-06-18",
+      "closingDate": null,
+      "status": "open",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "jfrog-li-4428791793",
+      "company": "JFrog",
+      "title": "Director of Product Management - Artifactory",
+      "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/director-of-product-management-artifactory-at-jfrog-4428791793",
+      "publishDate": "2026-06-18",
+      "discoveredDate": "2026-06-18",
+      "closingDate": null,
+      "status": "open",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "nvidia-li-4428768225",
+      "company": "Nvidia",
+      "title": "Senior Product Manager",
+      "location": "Yokneam Ilit, North District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-nvidia-4428768225",
+      "publishDate": "2026-06-18",
+      "discoveredDate": "2026-06-18",
       "closingDate": null,
       "status": "open",
       "details": {
