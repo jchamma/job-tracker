@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-19T11:18:13.091157+00:00",
+  "lastUpdated": "2026-06-20T10:06:50.369853+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -237,8 +237,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-nvlink-at-nvidia-4395482216",
       "publishDate": "2026-04-29",
       "discoveredDate": "2026-05-12",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-06-20",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -655,8 +655,8 @@
       "url": "https://il.linkedin.com/jobs/view/product-manager-lead-at-papaya-global-4418749818",
       "publishDate": "2026-06-01",
       "discoveredDate": "2026-06-01",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-06-20",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -788,8 +788,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-of-product-ai-at-jfrog-4424098534",
       "publishDate": "2026-06-03",
       "discoveredDate": "2026-06-04",
-      "closingDate": "2026-06-19",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -978,8 +978,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-doca-process-and-productivity-at-nvidia-ai-4426481007",
       "publishDate": "2026-06-16",
       "discoveredDate": "2026-06-16",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-06-20",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1092,8 +1092,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-of-product-management-artifactory-at-jfrog-4428791793",
       "publishDate": "2026-06-18",
       "discoveredDate": "2026-06-18",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-06-20",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1168,6 +1168,25 @@
       "url": "https://il.linkedin.com/jobs/view/director-product-management-%E2%80%93-doca-at-nvidia-ai-4427315935",
       "publishDate": "2026-06-17",
       "discoveredDate": "2026-06-19",
+      "closingDate": null,
+      "status": "open",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "nvidia-li-4427374582",
+      "company": "Nvidia",
+      "title": "Senior Product Manager",
+      "location": "Yoqneam Illit, North District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-nvidia-ai-4427374582",
+      "publishDate": "2026-06-17",
+      "discoveredDate": "2026-06-20",
       "closingDate": null,
       "status": "open",
       "details": {
