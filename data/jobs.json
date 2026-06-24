@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-23T10:34:01.483797+00:00",
+  "lastUpdated": "2026-06-24T10:18:57.045923+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -237,8 +237,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-nvlink-at-nvidia-4395482216",
       "publishDate": "2026-04-29",
       "discoveredDate": "2026-05-12",
-      "closingDate": "2026-06-23",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -408,8 +408,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-of-product-management-at-tipalti-4416424875",
       "publishDate": "2026-05-18",
       "discoveredDate": "2026-05-19",
-      "closingDate": "2026-06-23",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -674,8 +674,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-pet-claims-experience-at-lemonade-4421628597",
       "publishDate": "2026-06-01",
       "discoveredDate": "2026-06-01",
-      "closingDate": "2026-06-21",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -826,8 +826,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-microsoft-4424701754",
       "publishDate": "2026-06-05",
       "discoveredDate": "2026-06-06",
-      "closingDate": "2026-06-10",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -978,8 +978,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-doca-process-and-productivity-at-nvidia-ai-4426481007",
       "publishDate": "2026-06-16",
       "discoveredDate": "2026-06-16",
-      "closingDate": "2026-06-23",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1168,8 +1168,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-product-management-%E2%80%93-doca-at-nvidia-ai-4427315935",
       "publishDate": "2026-06-17",
       "discoveredDate": "2026-06-19",
-      "closingDate": "2026-06-23",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1225,6 +1225,25 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-ai-native-security-at-jfrog-4430340252",
       "publishDate": "2026-06-21",
       "discoveredDate": "2026-06-22",
+      "closingDate": null,
+      "status": "open",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "jfrog-li-4430338256",
+      "company": "JFrog",
+      "title": "Senior Product Manager - JFrog Security",
+      "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/senior-product-manager-jfrog-security-at-jfrog-4430338256",
+      "publishDate": "2026-06-21",
+      "discoveredDate": "2026-06-24",
       "closingDate": null,
       "status": "open",
       "details": {
