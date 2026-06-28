@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-27T09:26:13.681741+00:00",
+  "lastUpdated": "2026-06-28T09:55:08.176485+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -408,8 +408,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-of-product-management-at-tipalti-4416424875",
       "publishDate": "2026-05-18",
       "discoveredDate": "2026-05-19",
-      "closingDate": "2026-06-26",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -655,8 +655,8 @@
       "url": "https://il.linkedin.com/jobs/view/product-manager-lead-at-papaya-global-4418749818",
       "publishDate": "2026-06-01",
       "discoveredDate": "2026-06-01",
-      "closingDate": "2026-06-26",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -845,8 +845,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-jfrog-4424217025",
       "publishDate": "2026-06-03",
       "discoveredDate": "2026-06-10",
-      "closingDate": "2026-06-27",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1149,8 +1149,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-product-management-%E2%80%93-doca-at-nvidia-4428428027",
       "publishDate": "2026-06-17",
       "discoveredDate": "2026-06-19",
-      "closingDate": "2026-06-27",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1168,8 +1168,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-product-management-%E2%80%93-doca-at-nvidia-ai-4427315935",
       "publishDate": "2026-06-17",
       "discoveredDate": "2026-06-19",
-      "closingDate": "2026-06-26",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1263,8 +1263,8 @@
       "url": "https://il.linkedin.com/jobs/view/staff-product-manager-at-lemonade-4419992191",
       "publishDate": "2026-06-24",
       "discoveredDate": "2026-06-26",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-06-28",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
