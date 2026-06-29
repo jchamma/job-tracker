@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-28T09:55:08.176485+00:00",
+  "lastUpdated": "2026-06-29T11:55:55.644707+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -579,8 +579,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-analytics-at-appsflyer-4382896696",
       "publishDate": "2026-05-15",
       "discoveredDate": "2026-05-30",
-      "closingDate": "2026-06-12",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -826,8 +826,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-microsoft-4424701754",
       "publishDate": "2026-06-05",
       "discoveredDate": "2026-06-06",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-06-29",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -845,8 +845,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-jfrog-4424217025",
       "publishDate": "2026-06-03",
       "discoveredDate": "2026-06-10",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-06-29",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -864,8 +864,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-applied-ai-at-fiverr-4425821827",
       "publishDate": "2026-06-09",
       "discoveredDate": "2026-06-11",
-      "closingDate": "2026-06-25",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -902,8 +902,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-monday-com-4428643594",
       "publishDate": "2026-06-14",
       "discoveredDate": "2026-06-15",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-06-29",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -978,8 +978,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-doca-process-and-productivity-at-nvidia-ai-4426481007",
       "publishDate": "2026-06-16",
       "discoveredDate": "2026-06-16",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-06-29",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -997,8 +997,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-doca-process-and-productivity-at-nvidia-4427783339",
       "publishDate": "2026-06-16",
       "discoveredDate": "2026-06-16",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-06-29",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1149,8 +1149,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-product-management-%E2%80%93-doca-at-nvidia-4428428027",
       "publishDate": "2026-06-17",
       "discoveredDate": "2026-06-19",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-06-29",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1244,8 +1244,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-jfrog-security-at-jfrog-4430338256",
       "publishDate": "2026-06-21",
       "discoveredDate": "2026-06-24",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-06-29",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1265,6 +1265,44 @@
       "discoveredDate": "2026-06-26",
       "closingDate": "2026-06-28",
       "status": "closed",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "amazon-li-4420644532",
+      "company": "Amazon",
+      "title": "Senior Product Manager, Technical, Shopping Personalization AI",
+      "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/senior-product-manager-technical-shopping-personalization-ai-at-amazon-4420644532",
+      "publishDate": "2026-06-19",
+      "discoveredDate": "2026-06-29",
+      "closingDate": null,
+      "status": "open",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "nvidia-li-4426895952",
+      "company": "Nvidia",
+      "title": "Senior Networking Software Product Manager – DOCA",
+      "location": "Raanana, Center District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/senior-networking-software-product-manager-%E2%80%93-doca-at-nvidia-ai-4426895952",
+      "publishDate": "2026-06-17",
+      "discoveredDate": "2026-06-29",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
