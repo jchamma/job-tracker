@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-02T09:58:09.809651+00:00",
+  "lastUpdated": "2026-07-03T09:53:26.835366+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -712,8 +712,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-papaya-4421855528",
       "publishDate": "2026-06-01",
       "discoveredDate": "2026-06-02",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-07-03",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -883,8 +883,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-tipalti-4427571058",
       "publishDate": "2026-06-11",
       "discoveredDate": "2026-06-12",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-07-03",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1130,8 +1130,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-product-management-%E2%80%93-doca-at-nvidia-4428414854",
       "publishDate": "2026-06-17",
       "discoveredDate": "2026-06-19",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-07-03",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1320,6 +1320,44 @@
       "url": "https://il.linkedin.com/jobs/view/product-manager-lead-at-papaya-global-4435560810",
       "publishDate": "2026-07-01",
       "discoveredDate": "2026-07-02",
+      "closingDate": null,
+      "status": "open",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "papaya-global-li-4432389212",
+      "company": "Papaya Global",
+      "title": "Director of Gaming Products",
+      "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/director-of-gaming-products-at-papaya-4432389212",
+      "publishDate": "2026-07-01",
+      "discoveredDate": "2026-07-03",
+      "closingDate": null,
+      "status": "open",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "intuit-li-4435212230",
+      "company": "Intuit",
+      "title": "Staff Product Manager",
+      "location": "Petah Tikva, Center District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/staff-product-manager-at-intuit-4435212230",
+      "publishDate": "2026-07-02",
+      "discoveredDate": "2026-07-03",
       "closingDate": null,
       "status": "open",
       "details": {
