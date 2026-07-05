@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-04T09:19:30.097454+00:00",
+  "lastUpdated": "2026-07-05T09:39:39.995501+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -237,8 +237,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-nvlink-at-nvidia-4395482216",
       "publishDate": "2026-04-29",
       "discoveredDate": "2026-05-12",
-      "closingDate": "2026-07-04",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -408,8 +408,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-of-product-management-at-tipalti-4416424875",
       "publishDate": "2026-05-18",
       "discoveredDate": "2026-05-19",
-      "closingDate": "2026-07-04",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -864,8 +864,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-applied-ai-at-fiverr-4425821827",
       "publishDate": "2026-06-09",
       "discoveredDate": "2026-06-11",
-      "closingDate": "2026-06-30",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1054,8 +1054,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-internal-ai-and-employee-productivity-at-nvidia-ai-4427302957",
       "publishDate": "2026-06-17",
       "discoveredDate": "2026-06-17",
-      "closingDate": "2026-07-04",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1130,8 +1130,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-product-management-%E2%80%93-doca-at-nvidia-4428414854",
       "publishDate": "2026-06-17",
       "discoveredDate": "2026-06-19",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-07-05",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1168,8 +1168,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-product-management-%E2%80%93-doca-at-nvidia-ai-4427315935",
       "publishDate": "2026-06-17",
       "discoveredDate": "2026-06-19",
-      "closingDate": "2026-07-04",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1320,8 +1320,8 @@
       "url": "https://il.linkedin.com/jobs/view/product-manager-lead-at-papaya-global-4435560810",
       "publishDate": "2026-07-01",
       "discoveredDate": "2026-07-02",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-07-05",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1358,8 +1358,65 @@
       "url": "https://il.linkedin.com/jobs/view/staff-product-manager-at-intuit-4435212230",
       "publishDate": "2026-07-02",
       "discoveredDate": "2026-07-03",
-      "closingDate": "2026-07-04",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "jfrog-li-4436033189",
+      "company": "JFrog",
+      "title": "Senior Product Manager - JFrog Security",
+      "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/senior-product-manager-jfrog-security-at-jfrog-4436033189",
+      "publishDate": "2026-07-05",
+      "discoveredDate": "2026-07-05",
+      "closingDate": null,
+      "status": "open",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "lemonade-li-4430492737",
+      "company": "Lemonade",
+      "title": "Staff Platform Product Manager",
+      "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/staff-platform-product-manager-at-lemonade-4430492737",
+      "publishDate": "2026-06-24",
+      "discoveredDate": "2026-07-05",
+      "closingDate": null,
+      "status": "open",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "intuit-li-4400746554",
+      "company": "Intuit",
+      "title": "Staff Product Manager, QuickBooks Bill Pay",
+      "location": "Petah Tikva, Center District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/staff-product-manager-quickbooks-bill-pay-at-intuit-4400746554",
+      "publishDate": "2026-06-17",
+      "discoveredDate": "2026-07-05",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
