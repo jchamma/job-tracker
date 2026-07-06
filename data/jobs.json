@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-05T09:39:39.995501+00:00",
+  "lastUpdated": "2026-07-06T11:24:39.928080+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -408,8 +408,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-of-product-management-at-tipalti-4416424875",
       "publishDate": "2026-05-18",
       "discoveredDate": "2026-05-19",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-07-06",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1130,8 +1130,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-product-management-%E2%80%93-doca-at-nvidia-4428414854",
       "publishDate": "2026-06-17",
       "discoveredDate": "2026-06-19",
-      "closingDate": "2026-07-05",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1168,8 +1168,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-product-management-%E2%80%93-doca-at-nvidia-ai-4427315935",
       "publishDate": "2026-06-17",
       "discoveredDate": "2026-06-19",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-07-06",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
