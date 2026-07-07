@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-06T11:24:39.928080+00:00",
+  "lastUpdated": "2026-07-07T10:22:31.380742+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -408,8 +408,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-of-product-management-at-tipalti-4416424875",
       "publishDate": "2026-05-18",
       "discoveredDate": "2026-05-19",
-      "closingDate": "2026-07-06",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -598,8 +598,8 @@
       "url": "https://il.linkedin.com/jobs/view/sr-staff-product-manager-quickbooks-money-at-intuit-4413898495",
       "publishDate": "2026-05-13",
       "discoveredDate": "2026-05-30",
-      "closingDate": "2026-06-03",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -712,8 +712,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-papaya-4421855528",
       "publishDate": "2026-06-01",
       "discoveredDate": "2026-06-02",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-07-07",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -883,8 +883,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-tipalti-4427571058",
       "publishDate": "2026-06-11",
       "discoveredDate": "2026-06-12",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-07-07",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1016,8 +1016,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-internal-ai-and-employee-productivity-at-nvidia-4428427029",
       "publishDate": "2026-06-17",
       "discoveredDate": "2026-06-17",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-07-07",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1035,8 +1035,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-internal-ai-and-employee-productivity-at-nvidia-4428425054",
       "publishDate": "2026-06-17",
       "discoveredDate": "2026-06-17",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-07-07",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1054,8 +1054,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-internal-ai-and-employee-productivity-at-nvidia-ai-4427302957",
       "publishDate": "2026-06-17",
       "discoveredDate": "2026-06-17",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-07-07",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1282,8 +1282,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-technical-shopping-personalization-ai-at-amazon-4420644532",
       "publishDate": "2026-06-19",
       "discoveredDate": "2026-06-29",
-      "closingDate": "2026-06-30",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1339,8 +1339,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-of-gaming-products-at-papaya-4432389212",
       "publishDate": "2026-07-01",
       "discoveredDate": "2026-07-03",
-      "closingDate": "2026-07-04",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1358,8 +1358,8 @@
       "url": "https://il.linkedin.com/jobs/view/staff-product-manager-at-intuit-4435212230",
       "publishDate": "2026-07-02",
       "discoveredDate": "2026-07-03",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-07-07",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1396,8 +1396,8 @@
       "url": "https://il.linkedin.com/jobs/view/staff-platform-product-manager-at-lemonade-4430492737",
       "publishDate": "2026-06-24",
       "discoveredDate": "2026-07-05",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-07-07",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1415,6 +1415,25 @@
       "url": "https://il.linkedin.com/jobs/view/staff-product-manager-quickbooks-bill-pay-at-intuit-4400746554",
       "publishDate": "2026-06-17",
       "discoveredDate": "2026-07-05",
+      "closingDate": "2026-07-07",
+      "status": "closed",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "nvidia-li-4427767663",
+      "company": "Nvidia",
+      "title": "Senior Product Manager – Host Networking Platforms",
+      "location": "Yokneam Ilit, North District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/senior-product-manager-%E2%80%93-host-networking-platforms-at-nvidia-4427767663",
+      "publishDate": "2026-06-16",
+      "discoveredDate": "2026-07-07",
       "closingDate": null,
       "status": "open",
       "details": {
