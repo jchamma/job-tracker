@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-08T09:23:09.604758+00:00",
+  "lastUpdated": "2026-07-09T10:20:48.475506+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -598,8 +598,8 @@
       "url": "https://il.linkedin.com/jobs/view/sr-staff-product-manager-quickbooks-money-at-intuit-4413898495",
       "publishDate": "2026-05-13",
       "discoveredDate": "2026-05-30",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-07-09",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -864,8 +864,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-applied-ai-at-fiverr-4425821827",
       "publishDate": "2026-06-09",
       "discoveredDate": "2026-06-11",
-      "closingDate": "2026-07-08",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -902,8 +902,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-monday-com-4428643594",
       "publishDate": "2026-06-14",
       "discoveredDate": "2026-06-15",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-07-09",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1168,8 +1168,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-product-management-%E2%80%93-doca-at-nvidia-ai-4427315935",
       "publishDate": "2026-06-17",
       "discoveredDate": "2026-06-19",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-07-09",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1282,8 +1282,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-technical-shopping-personalization-ai-at-amazon-4420644532",
       "publishDate": "2026-06-19",
       "discoveredDate": "2026-06-29",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-07-09",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1301,8 +1301,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-networking-software-product-manager-%E2%80%93-doca-at-nvidia-ai-4426895952",
       "publishDate": "2026-06-17",
       "discoveredDate": "2026-06-29",
-      "closingDate": "2026-06-30",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1339,8 +1339,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-of-gaming-products-at-papaya-4432389212",
       "publishDate": "2026-07-01",
       "discoveredDate": "2026-07-03",
-      "closingDate": "2026-07-08",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1377,8 +1377,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-jfrog-security-at-jfrog-4436033189",
       "publishDate": "2026-07-05",
       "discoveredDate": "2026-07-05",
-      "closingDate": "2026-07-08",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1396,8 +1396,8 @@
       "url": "https://il.linkedin.com/jobs/view/staff-platform-product-manager-at-lemonade-4430492737",
       "publishDate": "2026-06-24",
       "discoveredDate": "2026-07-05",
-      "closingDate": "2026-07-07",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1434,8 +1434,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-%E2%80%93-host-networking-platforms-at-nvidia-4427767663",
       "publishDate": "2026-06-16",
       "discoveredDate": "2026-07-07",
-      "closingDate": "2026-07-08",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1453,6 +1453,25 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-banco-consumer-app-at-papaya-global-4437836898",
       "publishDate": "2026-07-07",
       "discoveredDate": "2026-07-08",
+      "closingDate": null,
+      "status": "open",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "lemonade-li-4417770245",
+      "company": "Lemonade",
+      "title": "Senior Growth Product Manager",
+      "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/senior-growth-product-manager-at-lemonade-4417770245",
+      "publishDate": "2026-06-24",
+      "discoveredDate": "2026-07-09",
       "closingDate": null,
       "status": "open",
       "details": {
