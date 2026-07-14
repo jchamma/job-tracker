@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-13T10:20:36.637031+00:00",
+  "lastUpdated": "2026-07-14T09:01:52.193454+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -598,8 +598,8 @@
       "url": "https://il.linkedin.com/jobs/view/sr-staff-product-manager-quickbooks-money-at-intuit-4413898495",
       "publishDate": "2026-05-13",
       "discoveredDate": "2026-05-30",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-07-14",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -712,8 +712,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-papaya-4421855528",
       "publishDate": "2026-06-01",
       "discoveredDate": "2026-06-02",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-07-14",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -883,8 +883,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-tipalti-4427571058",
       "publishDate": "2026-06-11",
       "discoveredDate": "2026-06-12",
-      "closingDate": "2026-07-13",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1035,8 +1035,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-internal-ai-and-employee-productivity-at-nvidia-4428425054",
       "publishDate": "2026-06-17",
       "discoveredDate": "2026-06-17",
-      "closingDate": "2026-07-13",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1054,8 +1054,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-internal-ai-and-employee-productivity-at-nvidia-ai-4427302957",
       "publishDate": "2026-06-17",
       "discoveredDate": "2026-06-17",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-07-14",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1474,6 +1474,25 @@
       "discoveredDate": "2026-07-09",
       "closingDate": "2026-07-13",
       "status": "closed",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "google-li-4439445044",
+      "company": "Google",
+      "title": "Group Product Manager, Waze",
+      "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/group-product-manager-waze-at-google-4439445044",
+      "publishDate": "2026-07-13",
+      "discoveredDate": "2026-07-14",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
