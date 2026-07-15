@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-14T09:01:52.193454+00:00",
+  "lastUpdated": "2026-07-15T09:06:52.307132+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -237,8 +237,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-nvlink-at-nvidia-4395482216",
       "publishDate": "2026-04-29",
       "discoveredDate": "2026-05-12",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-07-15",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -408,8 +408,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-of-product-management-at-tipalti-4416424875",
       "publishDate": "2026-05-18",
       "discoveredDate": "2026-05-19",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-07-15",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -712,8 +712,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-papaya-4421855528",
       "publishDate": "2026-06-01",
       "discoveredDate": "2026-06-02",
-      "closingDate": "2026-07-14",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1054,8 +1054,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-internal-ai-and-employee-productivity-at-nvidia-ai-4427302957",
       "publishDate": "2026-06-17",
       "discoveredDate": "2026-06-17",
-      "closingDate": "2026-07-14",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1092,8 +1092,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-of-product-management-artifactory-at-jfrog-4428791793",
       "publishDate": "2026-06-18",
       "discoveredDate": "2026-06-18",
-      "closingDate": "2026-07-12",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1282,8 +1282,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-technical-shopping-personalization-ai-at-amazon-4420644532",
       "publishDate": "2026-06-19",
       "discoveredDate": "2026-06-29",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-07-15",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1396,8 +1396,8 @@
       "url": "https://il.linkedin.com/jobs/view/staff-platform-product-manager-at-lemonade-4430492737",
       "publishDate": "2026-06-24",
       "discoveredDate": "2026-07-05",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-07-15",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1491,6 +1491,44 @@
       "url": "https://il.linkedin.com/jobs/view/group-product-manager-waze-at-google-4439445044",
       "publishDate": "2026-07-13",
       "discoveredDate": "2026-07-14",
+      "closingDate": null,
+      "status": "open",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "melio-7802171003",
+      "company": "Melio",
+      "title": "Senior Product Manager",
+      "location": "Tel Aviv",
+      "url": "https://job-boards.greenhouse.io/melio/jobs/7802171003",
+      "publishDate": "2026-07-14",
+      "discoveredDate": "2026-07-15",
+      "closingDate": null,
+      "status": "open",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "<p>In this role, you'll act as a Senior Product Manager on the Melio.com team. You will drive the product development lifecycle from research to launch, using your storytelling and collaboration skills to define and deliver innovative payment solutions that delight our users.</p>\n<p><strong>Qualifications:</strong></p>\n<ul>\n<li>5+ years of experience as a Product Manager of B2B products for large companies and enterprises</li>\n<li>You’ve worked on complex integration projects with large customers and/or companies.</li>\n<li>You’re a storyteller that can articulate problems into stories that people want to care about. And you can write it all down clearly so that R&amp;D can get on the same page.</li>\n<li>You can drive collaboration across multiple disciplines - data, marketing, operations, business development, and sales. You help give everyone a voice, you’re the conductor, not the lead singer, softly leading without forced authority is key.</li>\n<li>You articulate clearly, having honed excellent interpersonal and communication skills. Not just within the team, you’ll also be speaking to our partners regularly to really understand them and their needs.</li>\n<li>You have a strong understanding of all aspects of the product development lifecycle.</li>\n<li>You’re fluent in English with excellent speaking and writing skills.</li>\n<li>You have hands on experience in using AI tools for Product Management.</li>\n<li>AI Oriented mindset&nbsp;</li>\n<li>&nbsp;</li>\n</ul>\n<p><strong>Bonus points:</strong></p>\n<ul>\n<li>Experience working with remote teams.</li>\n<li>Experience in PLG/ Growth.&nbsp;</li>\n<li>Consumer-focused design is in your bones. You can’t help but notice beautifully intuitive products.&nbsp;</li>\n</ul>\n<p>&nbsp;</p>\n<p><strong>A day in the life and how you’ll make an impact:</strong></p>\n<ul>\n<li>Work closely with large customers and partners to embed and grow the Melio platform into their products and services</li>\n<li>Build the business case for new products and features through market research, competitive analysis, user interviews and other stakeholder feedback.</li>\n<li>Define key metrics to track success or prioritise features.</li>\n<li>Define the business as well as technical requirements for products and features. Write clear and concise product specs, feature cards, and other product documentation.</li>\n<li>Guide and work closely with engineering teams throughout the process of developing delightful payment experiences that customers love.</li>\n<li>Master the partner domain, their user behavior, workflows and jobs to be done to find the perfect context and growth opportunities for the Melio embedded solution</li>\n</ul>\n<p><strong>About the hiring department:&nbsp;</strong></p>\n<p>The Product department helps set the product vision and strategy.<br>We work alongside a diverse team of engineers, designers and data scientists to envision, build, deliver and scale Melio’s product to the right market.&nbsp;</p>\n<p>We are user experts and constantly analyze their current and future needs. We define the product roadmap, including features and requirements, and then articulate the business rationale behind it.&nbsp;</p>\n<p>The team is responsible for providing the ‘what’ and working with the engineering team to build a successful product.<br>As part of a product team within a fintech company, you’ll have a unique opportunity to make a real impact on Melio, its product, our users and help the company scale.</p>\n<h3><strong>About Melio:</strong></h3>\n<p>Melio builds business-to-business (B2B) payment tools so small business owners can spend less time in the back office and more on their craft. As the fastest-growing B2B payment platform in the US, Melio is working hard to find new and better ways to help small businesses succeed in the ways that work best for them.</p>\n<p>With offices in New York and Tel Aviv and a vibrant work culture, Melio is expanding daily. We are a diverse group of people who love what we do and do what we love. You will fit right in if you are a driven and passionate team player. We are an equal-opportunity employer and are always on the lookout for top-notch talent—please reach out if you would like to join us on this exciting journey!</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p><span style=\"color: rgb(236, 240, 241);\">#LI-TG1</span></p>",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": "<p>In this role, you'll act as a Senior Product Manager on the Melio.com team. You will drive the product development lifecycle from research to launch, using your storytelling and collaboration skills to define and deliver innovative payment solutions that delight our users.</p>\n<p><strong>Qualifications:</strong></p>\n<ul>\n<li>5+ years of experience as a Product Manager of B2B products for large companies and enterprises</li>\n<li>You’ve worked on complex integration projects with large customers and/or companies.</li>\n<li>You’re a storyteller that can articulate problems into stories that people want to care about. And you can write it all down clearly so that R&amp;D can get on the same page.</li>\n<li>You can drive collaboration across multiple disciplines - data, marketing, operations, business development, and sales. You help give everyone a voice, you’re the conductor, not the lead singer, softly leading without forced authority is key.</li>\n<li>You articulate clearly, having honed excellent interpersonal and communication skills. Not just within the team, you’ll also be speaking to our partners regularly to really understand them and their needs.</li>\n<li>You have a strong understanding of all aspects of the product development lifecycle.</li>\n<li>You’re fluent in English with excellent speaking and writing skills.</li>\n<li>You have hands on experience in using AI tools for Product Management.</li>\n<li>AI Oriented mindset&nbsp;</li>\n<li>&nbsp;</li>\n</ul>\n<p><strong>Bonus points:</strong></p>\n<ul>\n<li>Experience working with remote teams.</li>\n<li>Experience in PLG/ Growth.&nbsp;</li>\n<li>Consumer-focused design is in your bones. You can’t help but notice beautifully intuitive products.&nbsp;</li>\n</ul>\n<p>&nbsp;</p>\n<p><strong>A day in the life and how you’ll make an impact:</strong></p>\n<ul>\n<li>Work closely with large customers and partners to embed and grow the Melio platform into their products and services</li>\n<li>Build the business case for new products and features through market research, competitive analysis, user interviews and other stakeholder feedback.</li>\n<li>Define key metrics to track success or prioritise features.</li>\n<li>Define the business as well as technical requirements for products and features. Write clear and concise product specs, feature cards, and other product documentation.</li>\n<li>Guide and work closely with engineering teams throughout the process of developing delightful payment experiences that customers love.</li>\n<li>Master the partner domain, their user behavior, workflows and jobs to be done to find the perfect context and growth opportunities for the Melio embedded solution</li>\n</ul>\n<p><strong>About the hiring department:&nbsp;</strong></p>\n<p>The Product department helps set the product vision and strategy.<br>We work alongside a diverse team of engineers, designers and data scientists to envision, build, deliver and scale Melio’s product to the right market.&nbsp;</p>\n<p>We are user experts and constantly analyze their current and future needs. We define the product roadmap, including features and requirements, and then articulate the business rationale behind it.&nbsp;</p>\n<p>The team is responsible for providing the ‘what’ and working with the engineering team to build a successful product.<br>As part of a product team within a fintech company, you’ll have a unique opportunity to make a real impact on Melio, its product, our users and help the company scale.</p>\n<h3><strong>About Melio:</strong></h3>\n<p>Melio builds business-to-business (B2B) payment tools so small business owners can spend less time in the back office and more on their craft. As the fastest-growing B2B payment platform in the US, Melio is working hard to find new and better ways to help small businesses succeed in the ways that work best for them.</p>\n<p>With offices in New York and Tel Aviv and a vibrant work culture, Melio is expanding daily. We are a diverse group of people who love what we do and do what we love. You will fit right in if you are a driven and passionate team player. We are an equal-opportunity employer and are always on the lookout for top-notch talent—please reach out if you would like to join us on this exciting journey!</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p><span style=\"color: rgb(236, 240, 241);\">#LI-TG1</span></p>"
+    },
+    {
+      "id": "salesforce-li-4440805959",
+      "company": "Salesforce",
+      "title": "Senior Product Manager, Field Intelligence",
+      "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/senior-product-manager-field-intelligence-at-salesforce-4440805959",
+      "publishDate": "2026-07-14",
+      "discoveredDate": "2026-07-15",
       "closingDate": null,
       "status": "open",
       "details": {
