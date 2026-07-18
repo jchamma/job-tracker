@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-17T09:06:03.821588+00:00",
+  "lastUpdated": "2026-07-18T08:45:51.311419+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -579,8 +579,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-analytics-at-appsflyer-4382896696",
       "publishDate": "2026-05-15",
       "discoveredDate": "2026-05-30",
-      "closingDate": "2026-07-16",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -712,8 +712,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-papaya-4421855528",
       "publishDate": "2026-06-01",
       "discoveredDate": "2026-06-02",
-      "closingDate": "2026-07-17",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1092,8 +1092,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-of-product-management-artifactory-at-jfrog-4428791793",
       "publishDate": "2026-06-18",
       "discoveredDate": "2026-06-18",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-07-18",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1130,8 +1130,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-product-management-%E2%80%93-doca-at-nvidia-4428414854",
       "publishDate": "2026-06-17",
       "discoveredDate": "2026-06-19",
-      "closingDate": "2026-07-17",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1149,8 +1149,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-product-management-%E2%80%93-doca-at-nvidia-4428428027",
       "publishDate": "2026-06-17",
       "discoveredDate": "2026-06-19",
-      "closingDate": "2026-07-17",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1282,8 +1282,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-technical-shopping-personalization-ai-at-amazon-4420644532",
       "publishDate": "2026-06-19",
       "discoveredDate": "2026-06-29",
-      "closingDate": "2026-07-15",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1339,8 +1339,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-of-gaming-products-at-papaya-4432389212",
       "publishDate": "2026-07-01",
       "discoveredDate": "2026-07-03",
-      "closingDate": "2026-07-17",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1529,6 +1529,25 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-field-intelligence-at-salesforce-4440805959",
       "publishDate": "2026-07-14",
       "discoveredDate": "2026-07-15",
+      "closingDate": "2026-07-18",
+      "status": "closed",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "appsflyer-li-4440761289",
+      "company": "AppsFlyer",
+      "title": "Senior Product Manager - Attribution",
+      "location": "Herzliya, Tel Aviv District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/senior-product-manager-attribution-at-appsflyer-4440761289",
+      "publishDate": "2026-07-16",
+      "discoveredDate": "2026-07-18",
       "closingDate": null,
       "status": "open",
       "details": {
