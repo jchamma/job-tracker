@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-19T07:43:27.982561+00:00",
+  "lastUpdated": "2026-07-20T08:01:46.940261+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -9,8 +9,8 @@
       "url": "https://job-boards.greenhouse.io/forter/jobs/8524208002",
       "publishDate": "2026-04-30",
       "discoveredDate": "2026-05-12",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-07-20",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -579,8 +579,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-analytics-at-appsflyer-4382896696",
       "publishDate": "2026-05-15",
       "discoveredDate": "2026-05-30",
-      "closingDate": "2026-07-19",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -598,8 +598,8 @@
       "url": "https://il.linkedin.com/jobs/view/sr-staff-product-manager-quickbooks-money-at-intuit-4413898495",
       "publishDate": "2026-05-13",
       "discoveredDate": "2026-05-30",
-      "closingDate": "2026-07-14",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1016,8 +1016,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-internal-ai-and-employee-productivity-at-nvidia-4428427029",
       "publishDate": "2026-06-17",
       "discoveredDate": "2026-06-17",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-07-20",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1035,8 +1035,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-internal-ai-and-employee-productivity-at-nvidia-4428425054",
       "publishDate": "2026-06-17",
       "discoveredDate": "2026-06-17",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-07-20",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1320,8 +1320,8 @@
       "url": "https://il.linkedin.com/jobs/view/product-manager-lead-at-papaya-global-4435560810",
       "publishDate": "2026-07-01",
       "discoveredDate": "2026-07-02",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-07-20",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1550,6 +1550,44 @@
       "discoveredDate": "2026-07-18",
       "closingDate": "2026-07-19",
       "status": "closed",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "lemonade-li-4439737744",
+      "company": "Lemonade",
+      "title": "Senior Growth Product Manager",
+      "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/senior-growth-product-manager-at-lemonade-4439737744",
+      "publishDate": "2026-07-12",
+      "discoveredDate": "2026-07-20",
+      "closingDate": null,
+      "status": "open",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "microsoft-li-4439733281",
+      "company": "Microsoft",
+      "title": "Senior Product Manager - Microsoft Fabric",
+      "location": "Israel",
+      "url": "https://il.linkedin.com/jobs/view/senior-product-manager-microsoft-fabric-at-microsoft-4439733281",
+      "publishDate": "2026-07-12",
+      "discoveredDate": "2026-07-20",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
