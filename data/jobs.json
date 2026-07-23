@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-22T07:48:23.923896+00:00",
+  "lastUpdated": "2026-07-23T07:49:02.337526+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -237,8 +237,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-nvlink-at-nvidia-4395482216",
       "publishDate": "2026-04-29",
       "discoveredDate": "2026-05-12",
-      "closingDate": "2026-07-22",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -541,8 +541,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-fiverr-4418826431",
       "publishDate": "2026-05-27",
       "discoveredDate": "2026-05-28",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-07-23",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -712,8 +712,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-papaya-4421855528",
       "publishDate": "2026-06-01",
       "discoveredDate": "2026-06-02",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-07-23",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -883,8 +883,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-tipalti-4427571058",
       "publishDate": "2026-06-11",
       "discoveredDate": "2026-06-12",
-      "closingDate": "2026-07-17",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1453,8 +1453,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-banco-consumer-app-at-papaya-global-4437836898",
       "publishDate": "2026-07-07",
       "discoveredDate": "2026-07-08",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-07-23",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1599,7 +1599,6 @@
     }
   ],
   "fetchErrors": [
-    "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'Head of Product': HTTP 429 (blocked)",
     "HoneyBook: HTTPError: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/honeybook/jobs?content=true"
   ]
 }
