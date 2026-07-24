@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-23T07:49:02.337526+00:00",
+  "lastUpdated": "2026-07-24T07:48:21.599843+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -9,8 +9,8 @@
       "url": "https://job-boards.greenhouse.io/forter/jobs/8524208002",
       "publishDate": "2026-04-30",
       "discoveredDate": "2026-05-12",
-      "closingDate": "2026-07-20",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -237,8 +237,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-nvlink-at-nvidia-4395482216",
       "publishDate": "2026-04-29",
       "discoveredDate": "2026-05-12",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-07-24",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -541,8 +541,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-fiverr-4418826431",
       "publishDate": "2026-05-27",
       "discoveredDate": "2026-05-28",
-      "closingDate": "2026-07-23",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -883,8 +883,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-tipalti-4427571058",
       "publishDate": "2026-06-11",
       "discoveredDate": "2026-06-12",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-07-24",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
