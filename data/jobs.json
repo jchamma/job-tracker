@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-25T07:39:01.095941+00:00",
+  "lastUpdated": "2026-07-26T07:49:35.740308+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -9,8 +9,8 @@
       "url": "https://job-boards.greenhouse.io/forter/jobs/8524208002",
       "publishDate": "2026-04-30",
       "discoveredDate": "2026-05-12",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-07-26",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -237,8 +237,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-nvlink-at-nvidia-4395482216",
       "publishDate": "2026-04-29",
       "discoveredDate": "2026-05-12",
-      "closingDate": "2026-07-24",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1339,8 +1339,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-of-gaming-products-at-papaya-4432389212",
       "publishDate": "2026-07-01",
       "discoveredDate": "2026-07-03",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-07-26",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1543,13 +1543,13 @@
     {
       "id": "appsflyer-li-4440761289",
       "company": "AppsFlyer",
-      "title": "Senior Product Manager - Attribution",
+      "title": "Senior Product Manager (Attribution)",
       "location": "Herzliya, Tel Aviv District, Israel",
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-attribution-at-appsflyer-4440761289",
       "publishDate": "2026-07-16",
       "discoveredDate": "2026-07-18",
-      "closingDate": "2026-07-19",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1588,6 +1588,25 @@
       "discoveredDate": "2026-07-20",
       "closingDate": "2026-07-21",
       "status": "closed",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "salesforce-li-4445603011",
+      "company": "Salesforce",
+      "title": "Senior Director, Product Management",
+      "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/senior-director-product-management-at-salesforce-4445603011",
+      "publishDate": "2026-07-26",
+      "discoveredDate": "2026-07-26",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
