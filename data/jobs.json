@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-27T08:10:35.304162+00:00",
+  "lastUpdated": "2026-07-28T07:52:14.906259+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -1092,8 +1092,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-of-product-management-artifactory-at-jfrog-4428791793",
       "publishDate": "2026-06-18",
       "discoveredDate": "2026-06-18",
-      "closingDate": "2026-07-18",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1600,9 +1600,9 @@
     {
       "id": "salesforce-li-4445603011",
       "company": "Salesforce",
-      "title": "Senior Director, Product Management",
+      "title": "Senior Director, Product Management, Security",
       "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
-      "url": "https://il.linkedin.com/jobs/view/senior-director-product-management-at-salesforce-4445603011",
+      "url": "https://il.linkedin.com/jobs/view/senior-director-product-management-security-at-salesforce-4445603011",
       "publishDate": "2026-07-26",
       "discoveredDate": "2026-07-26",
       "closingDate": null,
