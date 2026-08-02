@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-01T07:45:08.475607+00:00",
+  "lastUpdated": "2026-08-02T07:46:19.293058+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -1130,8 +1130,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-product-management-%E2%80%93-doca-at-nvidia-4428414854",
       "publishDate": "2026-06-17",
       "discoveredDate": "2026-06-19",
-      "closingDate": "2026-08-01",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1339,8 +1339,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-of-gaming-products-at-papaya-4432389212",
       "publishDate": "2026-07-01",
       "discoveredDate": "2026-07-03",
-      "closingDate": "2026-07-30",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1377,8 +1377,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-jfrog-security-at-jfrog-4436033189",
       "publishDate": "2026-07-05",
       "discoveredDate": "2026-07-05",
-      "closingDate": "2026-08-01",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1434,8 +1434,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-%E2%80%93-host-networking-platforms-at-nvidia-4427767663",
       "publishDate": "2026-06-16",
       "discoveredDate": "2026-07-07",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-08-02",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1529,8 +1529,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-field-intelligence-at-salesforce-4440805959",
       "publishDate": "2026-07-14",
       "discoveredDate": "2026-07-15",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-08-02",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
