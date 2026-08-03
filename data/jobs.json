@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-02T07:46:19.293058+00:00",
+  "lastUpdated": "2026-08-03T08:09:37.092056+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -1339,8 +1339,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-of-gaming-products-at-papaya-4432389212",
       "publishDate": "2026-07-01",
       "discoveredDate": "2026-07-03",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-08-03",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1377,8 +1377,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-jfrog-security-at-jfrog-4436033189",
       "publishDate": "2026-07-05",
       "discoveredDate": "2026-07-05",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-08-03",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1396,8 +1396,8 @@
       "url": "https://il.linkedin.com/jobs/view/staff-platform-product-manager-at-lemonade-4430492737",
       "publishDate": "2026-06-24",
       "discoveredDate": "2026-07-05",
-      "closingDate": "2026-07-17",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1434,8 +1434,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-%E2%80%93-host-networking-platforms-at-nvidia-4427767663",
       "publishDate": "2026-06-16",
       "discoveredDate": "2026-07-07",
-      "closingDate": "2026-08-02",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1624,6 +1624,25 @@
       "url": "https://il.linkedin.com/jobs/view/group-product-manager-filestore-google-cloud-at-google-4447195003",
       "publishDate": "2026-07-31",
       "discoveredDate": "2026-08-01",
+      "closingDate": null,
+      "status": "open",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "lemonade-li-4438563908",
+      "company": "Lemonade",
+      "title": "Staff Product Manager",
+      "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/staff-product-manager-at-lemonade-4438563908",
+      "publishDate": "2026-07-30",
+      "discoveredDate": "2026-08-03",
       "closingDate": null,
       "status": "open",
       "details": {
