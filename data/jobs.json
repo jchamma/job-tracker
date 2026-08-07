@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-06T07:52:49.676810+00:00",
+  "lastUpdated": "2026-08-07T07:30:25.386256+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -579,8 +579,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-analytics-at-appsflyer-4382896696",
       "publishDate": "2026-05-15",
       "discoveredDate": "2026-05-30",
-      "closingDate": "2026-08-05",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1645,6 +1645,25 @@
       "discoveredDate": "2026-08-03",
       "closingDate": "2026-08-04",
       "status": "closed",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "papaya-global-li-4450279765",
+      "company": "Papaya Global",
+      "title": "VP Product",
+      "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/vp-product-at-papaya-4450279765",
+      "publishDate": "2026-08-06",
+      "discoveredDate": "2026-08-07",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
