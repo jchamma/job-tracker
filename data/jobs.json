@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-07T07:30:25.386256+00:00",
+  "lastUpdated": "2026-08-08T07:20:52.624508+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -598,8 +598,8 @@
       "url": "https://il.linkedin.com/jobs/view/sr-staff-product-manager-quickbooks-money-at-intuit-4413898495",
       "publishDate": "2026-05-13",
       "discoveredDate": "2026-05-30",
-      "closingDate": "2026-08-06",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1672,9 +1672,29 @@
         "other": ""
       },
       "rawDescription": ""
+    },
+    {
+      "id": "nvidia-li-4427786102",
+      "company": "Nvidia",
+      "title": "Senior Product Manager – Host Networking Platforms",
+      "location": "Tel Aviv District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/senior-product-manager-%E2%80%93-host-networking-platforms-at-nvidia-4427786102",
+      "publishDate": "2026-07-28",
+      "discoveredDate": "2026-08-08",
+      "closingDate": null,
+      "status": "open",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
     }
   ],
   "fetchErrors": [
+    "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'Head of Product': HTTP 429 (blocked)",
     "HoneyBook: HTTPError: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/honeybook/jobs?content=true"
   ]
 }
