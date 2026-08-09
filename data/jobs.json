@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-08T07:20:52.624508+00:00",
+  "lastUpdated": "2026-08-09T07:21:42.014894+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -1643,8 +1643,8 @@
       "url": "https://il.linkedin.com/jobs/view/staff-product-manager-at-lemonade-4438563908",
       "publishDate": "2026-07-30",
       "discoveredDate": "2026-08-03",
-      "closingDate": "2026-08-04",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1694,7 +1694,6 @@
     }
   ],
   "fetchErrors": [
-    "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'Head of Product': HTTP 429 (blocked)",
     "HoneyBook: HTTPError: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/honeybook/jobs?content=true"
   ]
 }
