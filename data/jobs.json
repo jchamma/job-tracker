@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-10T07:31:51.622286+00:00",
+  "lastUpdated": "2026-08-11T07:27:29.584022+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -579,8 +579,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-analytics-at-appsflyer-4382896696",
       "publishDate": "2026-05-15",
       "discoveredDate": "2026-05-30",
-      "closingDate": "2026-08-10",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -598,8 +598,8 @@
       "url": "https://il.linkedin.com/jobs/view/sr-staff-product-manager-quickbooks-money-at-intuit-4413898495",
       "publishDate": "2026-05-13",
       "discoveredDate": "2026-05-30",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-08-11",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1683,6 +1683,25 @@
       "discoveredDate": "2026-08-08",
       "closingDate": "2026-08-10",
       "status": "closed",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "google-li-4451189484",
+      "company": "Google",
+      "title": "Group Product Manager, Waze",
+      "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/group-product-manager-waze-at-google-4451189484",
+      "publishDate": "2026-08-10",
+      "discoveredDate": "2026-08-11",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
