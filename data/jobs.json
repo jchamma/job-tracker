@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-19T07:16:15.979067+00:00",
+  "lastUpdated": "2026-08-20T07:17:18.459659+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -1681,8 +1681,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-%E2%80%93-host-networking-platforms-at-nvidia-4427786102",
       "publishDate": "2026-07-28",
       "discoveredDate": "2026-08-08",
-      "closingDate": "2026-08-19",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
