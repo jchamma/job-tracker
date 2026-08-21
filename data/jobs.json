@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-20T07:17:18.459659+00:00",
+  "lastUpdated": "2026-08-21T07:17:42.799267+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -593,13 +593,13 @@
     {
       "id": "intuit-li-4413898495",
       "company": "Intuit",
-      "title": "Sr Staff Product Manager, QuickBooks Money",
+      "title": "Sr Staff Product Manager, QuickBooks Bill Pay",
       "location": "Petah Tikva, Center District, Israel",
-      "url": "https://il.linkedin.com/jobs/view/sr-staff-product-manager-quickbooks-money-at-intuit-4413898495",
+      "url": "https://il.linkedin.com/jobs/view/sr-staff-product-manager-quickbooks-bill-pay-at-intuit-4413898495",
       "publishDate": "2026-05-13",
       "discoveredDate": "2026-05-30",
-      "closingDate": "2026-08-15",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1643,8 +1643,8 @@
       "url": "https://il.linkedin.com/jobs/view/staff-product-manager-at-lemonade-4438563908",
       "publishDate": "2026-07-30",
       "discoveredDate": "2026-08-03",
-      "closingDate": "2026-08-19",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1681,8 +1681,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-%E2%80%93-host-networking-platforms-at-nvidia-4427786102",
       "publishDate": "2026-07-28",
       "discoveredDate": "2026-08-08",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-08-21",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
