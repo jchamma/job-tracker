@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-27T10:17:10.324761+00:00",
+  "lastUpdated": "2026-08-28T10:31:22.301247+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -541,8 +541,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-fiverr-4418826431",
       "publishDate": "2026-05-27",
       "discoveredDate": "2026-05-28",
-      "closingDate": "2026-08-26",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
