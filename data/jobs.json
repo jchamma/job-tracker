@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-30T07:08:11.814452+00:00",
+  "lastUpdated": "2026-08-31T07:15:39.687318+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -541,8 +541,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-fiverr-4418826431",
       "publishDate": "2026-05-27",
       "discoveredDate": "2026-05-28",
-      "closingDate": "2026-08-30",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -579,8 +579,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-analytics-at-appsflyer-4382896696",
       "publishDate": "2026-05-15",
       "discoveredDate": "2026-05-30",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-08-31",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -598,8 +598,8 @@
       "url": "https://il.linkedin.com/jobs/view/sr-staff-product-manager-quickbooks-bill-pay-at-intuit-4413898495",
       "publishDate": "2026-05-13",
       "discoveredDate": "2026-05-30",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-08-31",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1396,8 +1396,8 @@
       "url": "https://il.linkedin.com/jobs/view/staff-platform-product-manager-at-lemonade-4430492737",
       "publishDate": "2026-06-24",
       "discoveredDate": "2026-07-05",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-08-31",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1643,8 +1643,8 @@
       "url": "https://il.linkedin.com/jobs/view/staff-product-manager-at-lemonade-4438563908",
       "publishDate": "2026-07-30",
       "discoveredDate": "2026-08-03",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-08-31",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1759,6 +1759,25 @@
       "discoveredDate": "2026-08-16",
       "closingDate": "2026-08-30",
       "status": "closed",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "papaya-global-li-4457229415",
+      "company": "Papaya Global",
+      "title": "Product Manager Lead",
+      "location": "Herzliya, Tel Aviv District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/product-manager-lead-at-papaya-global-4457229415",
+      "publishDate": "2026-08-26",
+      "discoveredDate": "2026-08-31",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
