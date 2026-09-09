@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-08T07:08:40.131517+00:00",
+  "lastUpdated": "2026-09-09T07:09:10.855558+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -593,13 +593,13 @@
     {
       "id": "intuit-li-4413898495",
       "company": "Intuit",
-      "title": "Sr Staff Product Manager, QuickBooks Bill Pay",
+      "title": "Staff Product Manager, QuickBooks Bill Pay",
       "location": "Petah Tikva, Center District, Israel",
-      "url": "https://il.linkedin.com/jobs/view/sr-staff-product-manager-quickbooks-bill-pay-at-intuit-4413898495",
+      "url": "https://il.linkedin.com/jobs/view/staff-product-manager-quickbooks-bill-pay-at-intuit-4413898495",
       "publishDate": "2026-05-13",
       "discoveredDate": "2026-05-30",
-      "closingDate": "2026-08-31",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1605,8 +1605,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-director-product-management-security-at-salesforce-4445603011",
       "publishDate": "2026-07-26",
       "discoveredDate": "2026-07-26",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-09-09",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1776,6 +1776,25 @@
       "url": "https://il.linkedin.com/jobs/view/product-manager-lead-at-papaya-global-4457229415",
       "publishDate": "2026-08-26",
       "discoveredDate": "2026-08-31",
+      "closingDate": "2026-09-09",
+      "status": "closed",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "jfrog-li-4462683445",
+      "company": "JFrog",
+      "title": "Principal Product Manager -  Business Applications",
+      "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/principal-product-manager-business-applications-at-jfrog-4462683445",
+      "publishDate": "2026-09-06",
+      "discoveredDate": "2026-09-09",
       "closingDate": null,
       "status": "open",
       "details": {
