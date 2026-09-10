@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-09T07:09:10.855558+00:00",
+  "lastUpdated": "2026-09-10T07:08:41.778069+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -1548,8 +1548,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-attribution-at-appsflyer-4440761289",
       "publishDate": "2026-07-16",
       "discoveredDate": "2026-07-18",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-09-10",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1643,8 +1643,8 @@
       "url": "https://il.linkedin.com/jobs/view/staff-product-manager-at-lemonade-4438563908",
       "publishDate": "2026-07-30",
       "discoveredDate": "2026-08-03",
-      "closingDate": "2026-09-08",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1700,8 +1700,8 @@
       "url": "https://il.linkedin.com/jobs/view/group-product-manager-waze-at-google-4451189484",
       "publishDate": "2026-08-10",
       "discoveredDate": "2026-08-11",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-09-10",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1776,8 +1776,8 @@
       "url": "https://il.linkedin.com/jobs/view/product-manager-lead-at-papaya-global-4457229415",
       "publishDate": "2026-08-26",
       "discoveredDate": "2026-08-31",
-      "closingDate": "2026-09-09",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1795,6 +1795,25 @@
       "url": "https://il.linkedin.com/jobs/view/principal-product-manager-business-applications-at-jfrog-4462683445",
       "publishDate": "2026-09-06",
       "discoveredDate": "2026-09-09",
+      "closingDate": null,
+      "status": "open",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "nvidia-li-4464179661",
+      "company": "Nvidia",
+      "title": "Director, Product Management – DOCA",
+      "location": "Yokneam Ilit, North District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/director-product-management-%E2%80%93-doca-at-nvidia-4464179661",
+      "publishDate": "2026-09-10",
+      "discoveredDate": "2026-09-10",
       "closingDate": null,
       "status": "open",
       "details": {
