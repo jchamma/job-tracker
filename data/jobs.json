@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-10T07:08:41.778069+00:00",
+  "lastUpdated": "2026-09-11T07:08:44.670575+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -598,8 +598,8 @@
       "url": "https://il.linkedin.com/jobs/view/staff-product-manager-quickbooks-bill-pay-at-intuit-4413898495",
       "publishDate": "2026-05-13",
       "discoveredDate": "2026-05-30",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-09-11",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1548,8 +1548,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-attribution-at-appsflyer-4440761289",
       "publishDate": "2026-07-16",
       "discoveredDate": "2026-07-18",
-      "closingDate": "2026-09-10",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1795,8 +1795,8 @@
       "url": "https://il.linkedin.com/jobs/view/principal-product-manager-business-applications-at-jfrog-4462683445",
       "publishDate": "2026-09-06",
       "discoveredDate": "2026-09-09",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-09-11",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
