@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-11T07:08:44.670575+00:00",
+  "lastUpdated": "2026-09-12T07:07:34.333217+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -598,8 +598,8 @@
       "url": "https://il.linkedin.com/jobs/view/staff-product-manager-quickbooks-bill-pay-at-intuit-4413898495",
       "publishDate": "2026-05-13",
       "discoveredDate": "2026-05-30",
-      "closingDate": "2026-09-11",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1548,8 +1548,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-attribution-at-appsflyer-4440761289",
       "publishDate": "2026-07-16",
       "discoveredDate": "2026-07-18",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-09-12",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1776,8 +1776,8 @@
       "url": "https://il.linkedin.com/jobs/view/product-manager-lead-at-papaya-global-4457229415",
       "publishDate": "2026-08-26",
       "discoveredDate": "2026-08-31",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-09-12",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1827,6 +1827,7 @@
     }
   ],
   "fetchErrors": [
+    "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'Senior Product Manager': HTTP 429 (blocked)",
     "HoneyBook: HTTPError: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/honeybook/jobs?content=true"
   ]
 }
