@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-12T07:07:34.333217+00:00",
+  "lastUpdated": "2026-09-13T07:07:36.301862+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -1548,8 +1548,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-attribution-at-appsflyer-4440761289",
       "publishDate": "2026-07-16",
       "discoveredDate": "2026-07-18",
-      "closingDate": "2026-09-12",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1814,8 +1814,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-product-management-%E2%80%93-doca-at-nvidia-4464179661",
       "publishDate": "2026-09-10",
       "discoveredDate": "2026-09-10",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-09-13",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1827,7 +1827,6 @@
     }
   ],
   "fetchErrors": [
-    "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'Senior Product Manager': HTTP 429 (blocked)",
     "HoneyBook: HTTPError: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/honeybook/jobs?content=true"
   ]
 }
