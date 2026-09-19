@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-18T07:09:15.917569+00:00",
+  "lastUpdated": "2026-09-19T07:08:20.853777+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -541,8 +541,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-fiverr-4418826431",
       "publishDate": "2026-05-27",
       "discoveredDate": "2026-05-28",
-      "closingDate": "2026-09-17",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1873,6 +1873,25 @@
       "discoveredDate": "2026-09-17",
       "closingDate": "2026-09-18",
       "status": "closed",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "intuit-li-4468074128",
+      "company": "Intuit",
+      "title": "Staff Product Manager",
+      "location": "Petah Tikva, Center District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/staff-product-manager-at-intuit-4468074128",
+      "publishDate": "2026-09-19",
+      "discoveredDate": "2026-09-19",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
