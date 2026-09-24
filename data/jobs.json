@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-23T07:11:07.228306+00:00",
+  "lastUpdated": "2026-09-24T07:11:05.683801+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -1909,8 +1909,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-of-product-management-at-tipalti-4467220257",
       "publishDate": "2026-09-14",
       "discoveredDate": "2026-09-20",
-      "closingDate": "2026-09-21",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
