@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-27T07:09:28.981880+00:00",
+  "lastUpdated": "2026-09-28T07:26:39.847975+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -541,8 +541,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-fiverr-4418826431",
       "publishDate": "2026-05-27",
       "discoveredDate": "2026-05-28",
-      "closingDate": "2026-09-27",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -598,8 +598,8 @@
       "url": "https://il.linkedin.com/jobs/view/staff-product-manager-quickbooks-bill-pay-at-intuit-4413898495",
       "publishDate": "2026-05-13",
       "discoveredDate": "2026-05-30",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-09-28",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1681,8 +1681,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-%E2%80%93-host-networking-platforms-at-nvidia-4427786102",
       "publishDate": "2026-07-28",
       "discoveredDate": "2026-08-08",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-09-28",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1871,8 +1871,8 @@
       "url": "https://il.linkedin.com/jobs/view/product-manager-lead-at-papaya-global-4468275018",
       "publishDate": "2026-09-16",
       "discoveredDate": "2026-09-17",
-      "closingDate": "2026-09-18",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
