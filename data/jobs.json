@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-28T07:26:39.847975+00:00",
+  "lastUpdated": "2026-09-29T07:16:03.921505+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -541,8 +541,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-fiverr-4418826431",
       "publishDate": "2026-05-27",
       "discoveredDate": "2026-05-28",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-09-29",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1643,8 +1643,8 @@
       "url": "https://il.linkedin.com/jobs/view/staff-product-manager-at-lemonade-4438563908",
       "publishDate": "2026-07-30",
       "discoveredDate": "2026-08-03",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-09-29",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1681,8 +1681,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-%E2%80%93-host-networking-platforms-at-nvidia-4427786102",
       "publishDate": "2026-07-28",
       "discoveredDate": "2026-08-08",
-      "closingDate": "2026-09-28",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1871,8 +1871,8 @@
       "url": "https://il.linkedin.com/jobs/view/product-manager-lead-at-papaya-global-4468275018",
       "publishDate": "2026-09-16",
       "discoveredDate": "2026-09-17",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-09-29",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1890,8 +1890,8 @@
       "url": "https://il.linkedin.com/jobs/view/staff-product-manager-at-intuit-4468074128",
       "publishDate": "2026-09-19",
       "discoveredDate": "2026-09-19",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-09-29",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1922,6 +1922,11 @@
     }
   ],
   "fetchErrors": [
+    "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'Director Product': HTTP 429 (blocked)",
+    "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'VP Product': HTTP 429 (blocked)",
+    "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'Head of Product': HTTP 429 (blocked)",
+    "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'Group Product Manager': HTTP 429 (blocked)",
+    "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'Lead Product Manager': HTTP 429 (blocked)",
     "HoneyBook: HTTPError: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/honeybook/jobs?content=true"
   ]
 }
