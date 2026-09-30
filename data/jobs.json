@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-29T07:16:03.921505+00:00",
+  "lastUpdated": "2026-09-30T07:16:00.771517+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -1643,8 +1643,8 @@
       "url": "https://il.linkedin.com/jobs/view/staff-product-manager-at-lemonade-4438563908",
       "publishDate": "2026-07-30",
       "discoveredDate": "2026-08-03",
-      "closingDate": "2026-09-29",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1890,8 +1890,8 @@
       "url": "https://il.linkedin.com/jobs/view/staff-product-manager-at-intuit-4468074128",
       "publishDate": "2026-09-19",
       "discoveredDate": "2026-09-19",
-      "closingDate": "2026-09-29",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1909,8 +1909,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-of-product-management-at-tipalti-4467220257",
       "publishDate": "2026-09-14",
       "discoveredDate": "2026-09-20",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-09-30",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1922,11 +1922,6 @@
     }
   ],
   "fetchErrors": [
-    "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'Director Product': HTTP 429 (blocked)",
-    "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'VP Product': HTTP 429 (blocked)",
-    "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'Head of Product': HTTP 429 (blocked)",
-    "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'Group Product Manager': HTTP 429 (blocked)",
-    "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'Lead Product Manager': HTTP 429 (blocked)",
     "HoneyBook: HTTPError: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/honeybook/jobs?content=true"
   ]
 }
