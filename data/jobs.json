@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-30T07:16:00.771517+00:00",
+  "lastUpdated": "2026-10-01T07:16:43.684983+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -1662,8 +1662,8 @@
       "url": "https://il.linkedin.com/jobs/view/vp-product-at-papaya-4450279765",
       "publishDate": "2026-08-06",
       "discoveredDate": "2026-08-07",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-10-01",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1681,8 +1681,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-%E2%80%93-host-networking-platforms-at-nvidia-4427786102",
       "publishDate": "2026-07-28",
       "discoveredDate": "2026-08-08",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-10-01",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1919,9 +1919,29 @@
         "other": ""
       },
       "rawDescription": ""
+    },
+    {
+      "id": "google-li-4472153854",
+      "company": "Google",
+      "title": "Group Product Manager, Filestore, Google Cloud",
+      "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/group-product-manager-filestore-google-cloud-at-google-4472153854",
+      "publishDate": "2026-09-30",
+      "discoveredDate": "2026-10-01",
+      "closingDate": null,
+      "status": "open",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
     }
   ],
   "fetchErrors": [
+    "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'Lead Product Manager': HTTP 429 (blocked)",
     "HoneyBook: HTTPError: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/honeybook/jobs?content=true"
   ]
 }
