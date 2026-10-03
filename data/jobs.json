@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-02T07:14:50.981440+00:00",
+  "lastUpdated": "2026-10-03T07:15:53.420186+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -332,8 +332,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-claims-experience-at-lemonade-4385134506",
       "publishDate": "2026-04-28",
       "discoveredDate": "2026-05-13",
-      "closingDate": "2026-07-01",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1871,8 +1871,8 @@
       "url": "https://il.linkedin.com/jobs/view/product-manager-lead-at-papaya-global-4468275018",
       "publishDate": "2026-09-16",
       "discoveredDate": "2026-09-17",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-10-03",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
