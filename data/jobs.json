@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-05T07:29:57.260397+00:00",
+  "lastUpdated": "2026-10-06T07:15:57.824628+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -1795,8 +1795,8 @@
       "url": "https://il.linkedin.com/jobs/view/principal-product-manager-business-applications-at-jfrog-4462683445",
       "publishDate": "2026-09-06",
       "discoveredDate": "2026-09-09",
-      "closingDate": "2026-10-04",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
