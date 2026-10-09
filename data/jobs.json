@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-08T07:18:29.662233+00:00",
+  "lastUpdated": "2026-10-09T07:18:20.373290+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -1377,8 +1377,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-jfrog-security-at-jfrog-4436033189",
       "publishDate": "2026-07-05",
       "discoveredDate": "2026-07-05",
-      "closingDate": "2026-08-03",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
