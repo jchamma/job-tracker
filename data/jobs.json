@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-10T07:12:25.749257+00:00",
+  "lastUpdated": "2026-10-11T07:13:40.097898+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -332,8 +332,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-claims-experience-at-lemonade-4385134506",
       "publishDate": "2026-04-28",
       "discoveredDate": "2026-05-13",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-10-11",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1643,8 +1643,8 @@
       "url": "https://il.linkedin.com/jobs/view/staff-product-manager-at-lemonade-4438563908",
       "publishDate": "2026-07-30",
       "discoveredDate": "2026-08-03",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-10-11",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1738,8 +1738,8 @@
       "url": "https://il.linkedin.com/jobs/view/staff-growth-product-manager-at-lemonade-4444418733",
       "publishDate": "2026-08-14",
       "discoveredDate": "2026-08-16",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-10-11",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1795,8 +1795,8 @@
       "url": "https://il.linkedin.com/jobs/view/principal-product-manager-business-applications-at-jfrog-4462683445",
       "publishDate": "2026-09-06",
       "discoveredDate": "2026-09-09",
-      "closingDate": "2026-10-10",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1871,8 +1871,8 @@
       "url": "https://il.linkedin.com/jobs/view/product-manager-lead-at-papaya-global-4468275018",
       "publishDate": "2026-09-16",
       "discoveredDate": "2026-09-17",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-10-11",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1890,8 +1890,8 @@
       "url": "https://il.linkedin.com/jobs/view/staff-product-manager-at-intuit-4468074128",
       "publishDate": "2026-09-19",
       "discoveredDate": "2026-09-19",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-10-11",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1957,10 +1957,30 @@
         "other": ""
       },
       "rawDescription": ""
+    },
+    {
+      "id": "microsoft-li-4473238823",
+      "company": "Microsoft",
+      "title": "Principal Product Management - Microsoft Defender",
+      "location": "Israel",
+      "url": "https://il.linkedin.com/jobs/view/principal-product-management-microsoft-defender-at-microsoft-4473238823",
+      "publishDate": "2026-09-29",
+      "discoveredDate": "2026-10-11",
+      "closingDate": null,
+      "status": "open",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
     }
   ],
   "fetchErrors": [
-    "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'Group Product Manager': HTTP 429 (blocked)",
+    "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'Senior Product Manager': HTTP 429 (blocked)",
+    "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'Lead Product Manager': HTTP 429 (blocked)",
     "HoneyBook: HTTPError: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/honeybook/jobs?content=true"
   ]
 }
