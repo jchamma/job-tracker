@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-13T07:21:44.767660+00:00",
+  "lastUpdated": "2026-10-14T07:12:28.826270+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -1833,8 +1833,8 @@
       "url": "https://www.riskified.com/careers/job-description/?gh_jid=8785421002",
       "publishDate": "2026-09-14",
       "discoveredDate": "2026-09-15",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-10-14",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1980,7 +1980,7 @@
   ],
   "fetchErrors": [
     "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'Senior Product Manager': HTTP 429 (blocked)",
-    "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'Director Product': HTTP 429 (blocked)",
+    "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'Head of Product': HTTP 429 (blocked)",
     "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'Group Product Manager': HTTP 429 (blocked)",
     "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'Lead Product Manager': HTTP 429 (blocked)",
     "HoneyBook: HTTPError: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/honeybook/jobs?content=true"
