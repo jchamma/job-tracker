@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-19T07:24:53.497253+00:00",
+  "lastUpdated": "2026-10-20T07:12:42.626441+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -1681,8 +1681,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-%E2%80%93-host-networking-platforms-at-nvidia-4427786102",
       "publishDate": "2026-07-28",
       "discoveredDate": "2026-08-08",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-10-20",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1738,8 +1738,8 @@
       "url": "https://il.linkedin.com/jobs/view/staff-growth-product-manager-at-lemonade-4444418733",
       "publishDate": "2026-08-14",
       "discoveredDate": "2026-08-16",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-10-20",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1795,8 +1795,8 @@
       "url": "https://il.linkedin.com/jobs/view/principal-product-manager-business-applications-at-jfrog-4462683445",
       "publishDate": "2026-09-06",
       "discoveredDate": "2026-09-09",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-10-20",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1979,8 +1979,10 @@
     }
   ],
   "fetchErrors": [
-    "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'Senior Product Manager': HTTP 429 (blocked)",
+    "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'Director Product': HTTP 429 (blocked)",
+    "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'Head of Product': HTTP 429 (blocked)",
     "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'Group Product Manager': HTTP 429 (blocked)",
+    "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'Lead Product Manager': HTTP 429 (blocked)",
     "HoneyBook: HTTPError: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/honeybook/jobs?content=true"
   ]
 }
