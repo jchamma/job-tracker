@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-24T07:08:20.713387+00:00",
+  "lastUpdated": "2026-10-25T07:09:02.562159+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -1795,8 +1795,8 @@
       "url": "https://il.linkedin.com/jobs/view/principal-product-manager-business-applications-at-jfrog-4462683445",
       "publishDate": "2026-09-06",
       "discoveredDate": "2026-09-09",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-10-25",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -2017,10 +2017,6 @@
     }
   ],
   "fetchErrors": [
-    "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'Director Product': HTTP 429 (blocked)",
-    "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'VP Product': HTTP 429 (blocked)",
-    "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'Head of Product': HTTP 429 (blocked)",
-    "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'Lead Product Manager': HTTP 429 (blocked)",
     "HoneyBook: HTTPError: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/honeybook/jobs?content=true"
   ]
 }
