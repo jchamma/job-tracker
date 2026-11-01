@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-31T07:04:52.554403+00:00",
+  "lastUpdated": "2026-11-01T07:05:14.010717+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -2004,6 +2004,25 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-appsflyer-4475439734",
       "publishDate": "2026-10-07",
       "discoveredDate": "2026-10-22",
+      "closingDate": null,
+      "status": "open",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "lemonade-li-4483380845",
+      "company": "Lemonade",
+      "title": "Staff Product Manager, Europe Expansion",
+      "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/staff-product-manager-europe-expansion-at-lemonade-4483380845",
+      "publishDate": "2026-10-25",
+      "discoveredDate": "2026-11-01",
       "closingDate": null,
       "status": "open",
       "details": {
