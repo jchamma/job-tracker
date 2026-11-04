@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-03T14:48:56.831365+00:00",
+  "lastUpdated": "2026-11-04T15:01:09.482755+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -1130,8 +1130,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-product-management-%E2%80%93-doca-at-nvidia-4428414854",
       "publishDate": "2026-06-17",
       "discoveredDate": "2026-06-19",
-      "closingDate": "2026-10-13",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1149,8 +1149,8 @@
       "url": "https://il.linkedin.com/jobs/view/director-product-management-%E2%80%93-doca-at-nvidia-4428428027",
       "publishDate": "2026-06-17",
       "discoveredDate": "2026-06-19",
-      "closingDate": "2026-10-13",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1434,8 +1434,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-%E2%80%93-host-networking-platforms-at-nvidia-4427767663",
       "publishDate": "2026-06-16",
       "discoveredDate": "2026-07-07",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-11-04",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1681,8 +1681,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-%E2%80%93-host-networking-platforms-at-nvidia-4427786102",
       "publishDate": "2026-07-28",
       "discoveredDate": "2026-08-08",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-11-04",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -2052,6 +2052,63 @@
         "other": ""
       },
       "rawDescription": "<p><span style=\"font-size: 12pt;\"><strong>About the role:</strong></span></p>\n<p>Forter's Chargeback Recovery (CBR) and Dispute Management products help the world's largest merchants autonomously win back revenue lost to chargebacks. We are looking for a <strong>Senior Product Manager</strong> based in <strong>Tel Aviv</strong> to own this domain end-to-end, reporting to our Product Director, Risk Platform.</p>\n<p>This is a unique opportunity to own a product that sits at the intersection of payments, integrations and AI transformation. You'll own the strategy and roadmap for how Forter ingests disputes from payment service providers (PSPs), builds and submits evidence, and recovers revenue for merchants. That includes our transition toward in-house dispute capabilities and a growing ecosystem of PSP integrations. You’ll work alongside Engineering and Decision Science teams in building the product capabilities, and alongside Sales, Implementation, and Customer Success to bring it to market and make it land with enterprise merchants.</p>\n<p>If you know how a chargeback moves from a cardholder's bank to a merchant's representment letter, you want to build the product that automates that entire lifecycle and you’re excited about taking your offerings to market, this role was built for you.</p>\n<p><span style=\"font-size: 12pt;\"><strong>What you'll be doing:</strong></span></p>\n<ul>\n<li><strong>Roadmap &amp; Strategy:</strong> Define the vision and long-term roadmap for Chargeback Recovery and Dispute Management. You'll make the hard calls on build vs. partner, automation vs. manual operations, and where to invest in improving the customer experience.&nbsp;</li>\n<li><strong>Platform Ownership:</strong> Own the full product surface: the merchant-facing UI and experience, dispute ingestion (webhooks, APIs, batch/SFTP), dispute submission, and core capabilities like our evidence recommendation engine, automation rules, evidence API and letter generation.</li>\n<li><strong>PSP Ecosystem &amp; Orchestration:</strong> Set the strategy for how Forter connects to direct PSPs and processors to ingest and dispute chargebacks at scale.&nbsp;</li>\n<li><strong>AI transformation:</strong> Lead the evolution of our Dispute Agent and related AI capabilities. You'll identify where multi-step AI can replace manual work for merchants and our internal teams, and translate that into features with measurable efficiency gains.</li>\n<li><strong>End to End Ownership and Leadership:</strong> Own releases end-to-end: requirements, internal training, rollout, adoption monitoring, and feedback. You'll run a regular Dispute Management Product Council with GTM stakeholders to keep the field informed and feed their input back into the roadmap.</li>\n<li><strong>GTM Enablement &amp; Deal Support:</strong> Act as the primary product point of contact for Sales, Presales, Implementation, and Customer Success. You'll support complex enterprise deals from first call through go-live, help Implementation navigate tricky merchant integrations, and step in on escalations post-launch. You'll also work directly with strategic enterprise merchants through recurring product syncs.</li>\n<li><strong>Documentation &amp; Collateral:</strong> Own the product's knowledge layer, including public docs, the Help Center, internal enablement content, education courses, and implementation playbooks for both covered and uncovered/mixed merchant models. Alongside Product Marketing, you'll create one-pagers, ROI frameworks, and customer-facing presentations that make recovery value tangible to a merchant CFO.</li>\n</ul>\n<p><span style=\"font-size: 12pt;\"><strong>What you'll need:</strong></span></p>\n<ul>\n<li><strong>Domain Expertise:</strong> Proven experience in the chargebacks/disputes ecosystem, ideally with time spent at or working directly with large e-commerce merchants, PSPs or dispute vendors. You understand reason codes, representment, card network programs, and you know how dispute data actually flows between issuers, acquirers, PSPs, and merchants.</li>\n<li><strong>Product Ownership:</strong> 5+ years of product management experience in B2B SaaS, with a proven track record of owning a domain end-to-end: defining roadmaps, shipping complex capabilities, and driving commercial outcomes.</li>\n<li><strong>Technical &amp; Integration Fluency:</strong> You don't need to be an engineer, but you're comfortable defining requirements for systems that talk to other systems. You understand webhooks, APIs, batch file processing, and third-party integration architectures, and you can hold your own in a technical design review.</li>\n<li><strong>Communication and Collaboration:</strong> Excellent written and verbal communication with technical and non-technical audiences from across the globe. You can write a PRD for Engineering in the morning, run a merchant call in the afternoon, and present a strategy to the C-suite by end of week.</li>\n<li><strong>Self-Starter Mentality:</str"
+    },
+    {
+      "id": "google-li-4486055779",
+      "company": "Google",
+      "title": "Group Product Manager, Waze",
+      "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/group-product-manager-waze-at-google-4486055779",
+      "publishDate": "2026-11-03",
+      "discoveredDate": "2026-11-04",
+      "closingDate": null,
+      "status": "open",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "intuit-li-4481307185",
+      "company": "Intuit",
+      "title": "Senior Staff Product Manager, Bill Pay",
+      "location": "Petah Tikva, Center District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/senior-staff-product-manager-bill-pay-at-intuit-4481307185",
+      "publishDate": "2026-10-22",
+      "discoveredDate": "2026-11-04",
+      "closingDate": null,
+      "status": "open",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "nvidia-li-4486335719",
+      "company": "Nvidia",
+      "title": "Senior Product Manager - Run:ai DSX OS",
+      "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/senior-product-manager-run-ai-dsx-os-at-nvidia-4486335719",
+      "publishDate": "2026-11-04",
+      "discoveredDate": "2026-11-04",
+      "closingDate": null,
+      "status": "open",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
     }
   ],
   "fetchErrors": [
