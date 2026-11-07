@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-06T14:44:54.744189+00:00",
+  "lastUpdated": "2026-11-07T13:42:27.241227+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -2099,6 +2099,25 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-run-ai-dsx-os-at-nvidia-4486335719",
       "publishDate": "2026-11-04",
       "discoveredDate": "2026-11-04",
+      "closingDate": null,
+      "status": "open",
+      "details": {
+        "companyDetails": "",
+        "productDetails": "",
+        "jobDescription": "",
+        "requirements": "",
+        "other": ""
+      },
+      "rawDescription": ""
+    },
+    {
+      "id": "google-li-4487304511",
+      "company": "Google",
+      "title": "Group Product Manager, Filestore, Google Cloud",
+      "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+      "url": "https://il.linkedin.com/jobs/view/group-product-manager-filestore-google-cloud-at-google-4487304511",
+      "publishDate": "2026-11-06",
+      "discoveredDate": "2026-11-07",
       "closingDate": null,
       "status": "open",
       "details": {
