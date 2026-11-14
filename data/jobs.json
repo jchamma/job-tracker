@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-13T15:03:01.958270+00:00",
+  "lastUpdated": "2026-11-14T13:54:39.122999+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -2156,8 +2156,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-%E2%80%93-crm-sales-at-monday-com-4479004328",
       "publishDate": "2026-11-03",
       "discoveredDate": "2026-11-13",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-11-14",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -2188,7 +2188,6 @@
     }
   ],
   "fetchErrors": [
-    "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'VP Product': HTTP 429 (blocked)",
     "Melio: 0 jobs returned (fetch likely failed, not closing)",
     "HoneyBook: HTTPError: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/honeybook/jobs?content=true"
   ]
