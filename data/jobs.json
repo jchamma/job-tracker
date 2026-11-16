@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-15T14:28:42.865770+00:00",
+  "lastUpdated": "2026-11-16T16:42:03.281878+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -332,8 +332,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-claims-experience-at-lemonade-4385134506",
       "publishDate": "2026-04-28",
       "discoveredDate": "2026-05-13",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-11-16",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -2023,8 +2023,8 @@
       "url": "https://il.linkedin.com/jobs/view/staff-product-manager-europe-expansion-at-lemonade-4483380845",
       "publishDate": "2026-10-25",
       "discoveredDate": "2026-11-01",
-      "closingDate": "2026-11-02",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -2156,8 +2156,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-%E2%80%93-crm-sales-at-monday-com-4479004328",
       "publishDate": "2026-11-03",
       "discoveredDate": "2026-11-13",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-11-16",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -2188,6 +2188,8 @@
     }
   ],
   "fetchErrors": [
+    "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'Senior Product Manager': HTTP 429 (blocked)",
+    "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'Head of Product': HTTP 429 (blocked)",
     "Melio: 0 jobs returned (fetch likely failed, not closing)",
     "HoneyBook: HTTPError: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/honeybook/jobs?content=true"
   ]
