@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-19T16:15:09.436666+00:00",
+  "lastUpdated": "2026-11-20T15:53:09.781623+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -2099,8 +2099,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-run-ai-dsx-os-at-nvidia-4486335719",
       "publishDate": "2026-11-04",
       "discoveredDate": "2026-11-04",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-11-20",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -2137,8 +2137,8 @@
       "url": "https://il.linkedin.com/jobs/view/principal-technical-product-manager-tpm-cryptography-post-quantum-security-at-microsoft-4489968386",
       "publishDate": "2026-11-11",
       "discoveredDate": "2026-11-12",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-11-20",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -2191,6 +2191,8 @@
     "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'Senior Product Manager': HTTP 429 (blocked)",
     "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'Director Product': HTTP 429 (blocked)",
     "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'VP Product': HTTP 429 (blocked)",
+    "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'Head of Product': HTTP 429 (blocked)",
+    "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'Group Product Manager': HTTP 429 (blocked)",
     "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'Lead Product Manager': HTTP 429 (blocked)",
     "Melio: 0 jobs returned (fetch likely failed, not closing)",
     "HoneyBook: HTTPError: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/honeybook/jobs?content=true"
