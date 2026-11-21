@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-20T15:53:09.781623+00:00",
+  "lastUpdated": "2026-11-21T15:02:56.172201+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -2099,8 +2099,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-run-ai-dsx-os-at-nvidia-4486335719",
       "publishDate": "2026-11-04",
       "discoveredDate": "2026-11-04",
-      "closingDate": "2026-11-20",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -2189,7 +2189,6 @@
   ],
   "fetchErrors": [
     "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'Senior Product Manager': HTTP 429 (blocked)",
-    "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'Director Product': HTTP 429 (blocked)",
     "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'VP Product': HTTP 429 (blocked)",
     "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'Head of Product': HTTP 429 (blocked)",
     "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'Group Product Manager': HTTP 429 (blocked)",
