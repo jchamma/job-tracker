@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-22T15:00:11.033907+00:00",
+  "lastUpdated": "2026-11-23T18:56:01.485404+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -541,8 +541,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-fiverr-4418826431",
       "publishDate": "2026-05-27",
       "discoveredDate": "2026-05-28",
-      "closingDate": "2026-11-19",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -2175,8 +2175,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-appsflyer-4489269570",
       "publishDate": "2026-11-12",
       "discoveredDate": "2026-11-13",
-      "closingDate": "2026-11-19",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -2188,6 +2188,7 @@
     }
   ],
   "fetchErrors": [
+    "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'Director Product': HTTP 429 (blocked)",
     "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'Group Product Manager': HTTP 429 (blocked)",
     "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'Lead Product Manager': HTTP 429 (blocked)",
     "Melio: 0 jobs returned (fetch likely failed, not closing)",
