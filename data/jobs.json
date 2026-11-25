@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-24T18:35:07.127327+00:00",
+  "lastUpdated": "2026-11-25T17:45:26.991384+00:00",
   "jobs": [
     {
       "id": "forter-8524208002",
@@ -541,8 +541,8 @@
       "url": "https://il.linkedin.com/jobs/view/senior-product-manager-at-fiverr-4418826431",
       "publishDate": "2026-05-27",
       "discoveredDate": "2026-05-28",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-11-25",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -1738,8 +1738,8 @@
       "url": "https://il.linkedin.com/jobs/view/staff-growth-product-manager-at-lemonade-4444418733",
       "publishDate": "2026-08-14",
       "discoveredDate": "2026-08-16",
-      "closingDate": "2026-11-24",
-      "status": "closed",
+      "closingDate": null,
+      "status": "open",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -2137,8 +2137,8 @@
       "url": "https://il.linkedin.com/jobs/view/principal-technical-product-manager-tpm-cryptography-post-quantum-security-at-microsoft-4489968386",
       "publishDate": "2026-11-11",
       "discoveredDate": "2026-11-12",
-      "closingDate": null,
-      "status": "open",
+      "closingDate": "2026-11-25",
+      "status": "closed",
       "details": {
         "companyDetails": "",
         "productDetails": "",
@@ -2188,9 +2188,7 @@
     }
   ],
   "fetchErrors": [
-    "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'Senior Product Manager': HTTP 429 (blocked)",
-    "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'Director Product': HTTP 429 (blocked)",
-    "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'VP Product': HTTP 429 (blocked)",
+    "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'Group Product Manager': HTTP 429 (blocked)",
     "LinkedIn https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search 'Lead Product Manager': HTTP 429 (blocked)",
     "Melio: 0 jobs returned (fetch likely failed, not closing)",
     "HoneyBook: HTTPError: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/honeybook/jobs?content=true"
